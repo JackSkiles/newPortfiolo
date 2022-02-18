@@ -1,4 +1,16 @@
+@import "./typography.css";
+
+.contactdiv > p {
+    font-family: LeagueSpartan;
+    padding: 3px 0px 0px 5px;
+    margin: 0px;
+    font-size: 14px;
+}
+
 .topbarmain, .topbarleft {
+    padding: 0px;
+    margin: 0px;
+    height: 25px;
     display: flex;
     justify-content: space-around;
 }
@@ -9,5 +21,10 @@
 }
 
 .topbarleft {
-    
+    width: 70%;
+}
+
+.topbarright1, .contactdiv {
+    display: flex;
+    align-items: center;
 }
