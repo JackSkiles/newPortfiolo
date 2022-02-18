@@ -1,0 +1,13 @@
+.topbarmain, .topbarleft {
+    display: flex;
+    justify-content: space-around;
+}
+
+.topbarmain {
+    background-color: #FEC961;
+
+}
+
+.topbarleft {
+    
+}
