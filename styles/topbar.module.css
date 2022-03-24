@@ -4,7 +4,7 @@
     font-family: LeagueSpartan;
     padding: 3px 0px 0px 5px;
     margin: 0px;
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .topbarmain, .topbarleft {
@@ -38,7 +38,7 @@
 
 .topbarright1 {
     width: 30%;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .topbarright2 {
@@ -49,6 +49,10 @@
 
 .contactdiv {
     padding-right: 10px;
+}
+
+.topimg2
+{
 }
 
 .seperatordiv {
@@ -66,6 +70,22 @@
 
 .contactdiv2 {
     display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .topbarleft {
+        background-color: #FEC961;
+        width: 40%;
+    }
+    .topbarright1 {
+        width: 40%;
+        /* justify-content: space-between; */
+    }
+    .topbarright2 {
+        background-color: #04233F;
+        justify-content: space-around;
+        width: 15%;
+    }
 }
 
 @media screen and (max-width: 800px){

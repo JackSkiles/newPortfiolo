@@ -26,6 +26,24 @@ export default function Header() {
                     <a href="" className={styles.menuItem}>About Me</a>
                 </div>
             </div>
+            <div className={styles.headerRightMobile}>
+                <div className={styles.menuGroup}>
+                    <img src="Rectangle 17.png" className={styles.squareIcon}></img>
+                    <a href="" className={styles.menuItem}>Development Projects</a>
+                </div>
+                <div className={styles.menuGroup}>
+                    <img src="Rectangle 17.png" className={styles.squareIcon}></img>
+                    <a href="" className={styles.menuItem}>Graphic Design Projects</a>
+                </div>
+                <div className={styles.menuGroup}>
+                    <img src="Rectangle 17.png" className={styles.squareIcon}></img>
+                    <a href="" className={styles.menuItem}>Other Projects</a>
+                </div>
+                <div className={styles.menuGroup}>
+                    <img src="Rectangle 17.png" className={styles.squareIcon}></img>
+                    <a href="" className={styles.menuItem}>About Me</a>
+                </div>
+            </div>
         </div>
     )
 }

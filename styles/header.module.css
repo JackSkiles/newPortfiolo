@@ -13,12 +13,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 45%;
+    width: 50%;
     padding: 0px 40px 0px 0px;
 }
 
 .squareIcon {
-
+    width: .9em;
 }
 
 .title {
@@ -36,4 +36,30 @@
 
 .menuItem {
     padding: 0px 0px 0px 5px;
+    font-size: 14px;
+}
+
+.headerRightMobile
+{
+    display: none;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: white;
+    padding: 10px 50px 10px 50px;
+    height: 50vh;
+    justify-content: space-around;
+}
+
+
+@media screen and (max-width: 1000px){
+    .headerRight
+    {
+        display: none;
+    }
+    .headerRightMobile
+    {
+        display: flex;
+        flex-direction: column;
+    }
 }
