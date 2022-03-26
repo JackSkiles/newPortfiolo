@@ -28,6 +28,7 @@
     padding: 15px 20px 7px 20px;
     border-radius: 8px;
 }
+
 .menuGroup {
     /* display: flex;
     align-items: center;
@@ -39,41 +40,33 @@
     font-size: 14px;
 }
 
-.headerRightMobile
-{
+.headerRightMobile {
     display: none;
     position: fixed;
     right: 0px;
     top: 0px;
     background-color: white;
-    padding: 10px 50px 10px 50px;
+    padding: 80px 50px 10px 50px;
     height: 50vh;
     justify-content: space-around;
 }
 
-.mobileMenuButton
-{
-    display: flex;
-    position: relative;
-    top: 30px;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
-    height: 70px;
+
+.mobileMenuButton {
+    display: none;
 }
-#mobileXShowLeft, #mobileXShowRight
-{
+
+#mobileXShowLeft, #mobileXShowRight {
     display: block;
     position: relative;
     background-color: #04233F;
     height: 5px;
     width: 60px;
-    border-radius: 8px;   
+    border-radius: 8px;
 }
 
 
-#mobileXShowLeft
-{
+#mobileXShowLeft {
     /* left: -5px; */
     -webkit-transform: rotate(60deg);
     -moz-transform: rotate(60deg);
@@ -82,9 +75,8 @@
 }
 
 
-#mobileXShowRight
-{
-    bottom: 7px;
+#mobileXShowRight {
+    bottom: 6px;
     /* right: 5px; */
     -webkit-transform: rotate(60deg);
     -moz-transform: rotate(60deg);
@@ -93,8 +85,7 @@
 }
 
 
-.mobileMenuButton > button
-{
+.mobileMenuButton>button {
     border: none;
     display: flex;
     flex-direction: column;
@@ -104,18 +95,42 @@
 }
 
 
-.mobileMenuButton > button:hover
-{
-  cursor: pointer;
+.mobileMenuButton>button:hover {
+    cursor: pointer;
 }
-@media screen and (max-width: 1000px){
-    .headerRight
-    {
+
+@media screen and (max-width: 1000px) {
+    .mobileMenuButton {
+        display: flex;
+        position: relative;
+        top: 0px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 70px;
+        z-index: 1;
+    }
+    .mobileMenuButtonHide {
+        display: flex;
+        position: relative;
+        top: 0px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 70px;
+        z-index: 1;
+    }
+
+    .headerRight {
         display: none;
     }
-    .headerRightMobile
-    {
+
+    .headerRightMobile {
         display: flex;
         flex-direction: column;
+    }
+
+    .headerRightMobileHide {
+        display: none;
     }
 }
