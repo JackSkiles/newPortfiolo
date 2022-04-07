@@ -4,15 +4,17 @@ import ReactDom from 'react-dom';
 import { useState } from 'react';
 
 export default function Header(props) {
-    const [hide, setHide] = useState("Hide");
+    const [hide, setHide] = useState("");
+
 
     const onClick = () => {
         console.log(hide);
+        // console.log(mobileMenuButton)
         if(hide === "Hide")
         {
             setHide("");
         }
-        else if(hide == "")
+        else if(hide === "")
         {
             setHide("Hide");
         }
@@ -40,13 +42,13 @@ export default function Header(props) {
                     <a href="" className={styles.menuItem}>About Me</a>
                 </div>
             </div>
-            <div className={styles.mobileMenuButton + hide} >
+            <div className={`mobileMenuButton${hide}`} >
                 <button onClick={onClick}>
-                    <div className={styles.mobile + hide} id={styles.mobileXShowLeft}/>
-                    <div className={styles.mobile + hide} id={styles.mobileXShowRight}/>
+                    <div className={""} id={"mobileXShowLeft"}/>
+                    <div className={""} id={"mobileXShowRight"}/>
                 </button>
             </div>
-            <div className={styles.headerRightMobile + hide}>
+            <div className={`headerRightMobile${hide}`}>
                 <div className={styles.menuGroup}>
                     <img src="Rectangle 17.png" className={styles.squareIcon}></img>
                     <a href="" className={styles.menuItem}>Development Projects</a>

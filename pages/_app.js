@@ -1,5 +1,7 @@
 import '../styles/globals.css'
+import '../styles/mutable.css';
 import Layout from '../components/Layout'
+
 
 
 function MyApp({ Component, pageProps }) {

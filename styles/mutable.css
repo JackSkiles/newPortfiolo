@@ -1,44 +1,3 @@
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.headerLeft {
-    display: flex;
-    padding: 0px 0px 0px 40px;
-}
-
-.headerRight {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
-    padding: 0px 40px 0px 0px;
-}
-
-.squareIcon {
-    width: .9em;
-}
-
-.title {
-    color: white;
-    background-color: #04233F;
-    letter-spacing: 2px;
-    padding: 15px 20px 7px 20px;
-    border-radius: 8px;
-}
-
-.menuGroup {
-    /* display: flex;
-    align-items: center;
-     */
-}
-
-.menuItem {
-    padding: 0px 0px 0px 5px;
-    font-size: 14px;
-}
 
 .headerRightMobile {
     display: none;
@@ -119,10 +78,6 @@
         align-items: flex-end;
         height: 70px;
         z-index: 1;
-    }
-
-    .headerRight {
-        display: none;
     }
 
     .headerRightMobile {
