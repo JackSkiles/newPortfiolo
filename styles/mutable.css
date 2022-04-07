@@ -1,13 +1,23 @@
 
 .headerRightMobile {
-    display: none;
+    /* display: none; */
     position: fixed;
     right: 0px;
     top: 0px;
     background-color: white;
     padding: 80px 50px 10px 50px;
     height: 50vh;
+    /* width: 0; */
     justify-content: space-around;
+    transition: .5s;
+}
+
+.menuGroup {
+    /* display: flex;
+    align-items: center;
+     */
+    position: relative;
+    width: 100%;
 }
 
 
@@ -31,7 +41,7 @@
     -o-transform: rotate(00deg);
     transform: rotate(0deg);
     margin: 5px 0px 10px 0px; 
-    transition: .5s;
+    transition: .3s;
 }
 
 
@@ -42,7 +52,7 @@
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
     margin: 0px 0px 10px 0px; 
-    transition: .5s;
+    transition: .3s;
 
 }
 
@@ -53,7 +63,7 @@
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    transition: .5s;
+    transition: .3s;
 
 }
 
@@ -64,7 +74,7 @@
     -moz-transform: rotate(60deg);
     -o-transform: rotate(60deg);
     transform: rotate(45deg);
-    transition: .5s;
+    transition: .3s;
 
 }
 
@@ -73,7 +83,7 @@
 .mobileXCenter
 {
     display: none;
-    transition: .5s;
+    transition: .3s;
 
 }
 
@@ -84,7 +94,7 @@
     -moz-transform: rotate(60deg);
     -o-transform: rotate(60deg);
     transform: rotate(-45deg);
-    transition: .5s;
+    transition: .3s;
 
 }
 
