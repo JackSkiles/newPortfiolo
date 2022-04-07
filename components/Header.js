@@ -44,8 +44,9 @@ export default function Header(props) {
             </div>
             <div className={`mobileMenuButton${hide}`} >
                 <button onClick={onClick}>
-                    <div className={""} id={"mobileXShowLeft"}/>
-                    <div className={""} id={"mobileXShowRight"}/>
+                    <div className={`mobileX${hide}Left`}/>
+                    <div className={`mobileX${hide}Center`}/>
+                    <div className={`mobileX${hide}Right`}/>
                 </button>
             </div>
             <div className={`headerRightMobile${hide}`}>
