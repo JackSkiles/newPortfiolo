@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import '../styles/mutable.css';
+import '../styles/hero.css';
 import Layout from '../components/Layout'
 
 
