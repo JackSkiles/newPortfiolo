@@ -40,12 +40,12 @@
     top: 58%;
     left: 20%;
     /* border-radius: 50%; */
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .portrait
 {
     width: 30%;
-    z-index: 1;
+    /* z-index: 1; */
 
 }
