@@ -10,7 +10,7 @@ export default function Hero() {
                 </div>
                 <div className='hero-right'>
                     <div className='hero-img-div'>
-                        <img src='Mask Group 4.png'/>
+                        <img src='Mask Group 4.png' className="portrait"/>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,46 @@
+.hero-Main
+{
+    /* display: flex; */
+    /* justify-content: center; */
+    height: 700px;
+}
+
+.hero-inner
+{
+    display: flex;
+    /* justify-content: space-around; */
+    height: 80%;
+}
+
+.hero-left
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.hero-right
+{
+    position: fixed;
+    top: -600px;
+    right: -600px;
+    border-radius: 50%;
+    background-color: #0993F6;
+    height: 1500px;
+    width: 1500px;
+    z-index: -3;
+}
+
+
+.hero-img-div
+{
+    position: relative;
+    top: 58%;
+    left: 20%;
+}
+
+.portrait
+{
+    width: 30%;
+}
