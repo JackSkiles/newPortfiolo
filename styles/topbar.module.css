@@ -21,16 +21,19 @@
     
     /* -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg); */
+    z-index: 1;
 }
 
 .topbarleft {
     background-color: #FEC961;
     width: 80%;
+    z-index: 1;
 }
 
 .topbarright1, .topbarright2, .contactdiv {
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 .topbarright1 {
     background: #FEC961;
@@ -58,6 +61,7 @@
 .seperatordiv {
     width: 5%;
     background: linear-gradient(140deg, #FEC961 50%, #04233F 50%);
+    z-index: 1;
 }
 /* .contactmid {
     width: 5%;

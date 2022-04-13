@@ -1,20 +1,34 @@
 import React from 'react'
+import { useState } from 'react';
 
 export default function Hero() {
-  return (
-    <div>
-        <div className='hero-Main'>
-            <div className='hero-inner'>
-                <div className='hero-left'>
+    const [portrait, setImg] = useState("Mask Group 4.png");
 
-                </div>
-                <div className='hero-right'>
-                    <div className='hero-img-div'>
-                        <img src='Mask Group 4.png' className="portrait"/>
+
+    const handleMouseEnter = () => {
+        console.log("hello");
+        setImg("");
+    }
+    const handleMouseLeave = () => {
+        setImg("Mask Group 4.png");
+    }
+
+    return (
+        <div>
+            <div className='hero-Main'>
+                <div className='hero-inner' >
+                    <div className='hero-left'>
+
+                    </div>
+                    <div className='hero-right'>
+                        <div className='hero-img-div' onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave} >
+                            <img src={portrait} className="portrait"  />
+                            {/* <button>Hello</button> */}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
