@@ -4,7 +4,7 @@ import ReactDom from 'react-dom';
 import { useState } from 'react';
 
 export default function Header(props) {
-    const [hide, setHide] = useState("");
+    const [hide, setHide] = useState("Hide");
 
 
     const onClick = () => {
@@ -50,19 +50,20 @@ export default function Header(props) {
                 </button>
             </div>
             <div className={`headerRightMobile${hide}`}>
-                <div className={styles.menuGroup}>
+            
+                <div className={styles.menuGroup2} id="top-div">
                     <img src="Rectangle 17.png" className={styles.squareIcon}></img>
                     <a href="" className={styles.menuItem}>Development Projects</a>
                 </div>
-                <div className={styles.menuGroup}>
+                <div className={styles.menuGroup2}>
                     <img src="Rectangle 17.png" className={styles.squareIcon}></img>
                     <a href="" className={styles.menuItem}>Graphic Design Projects</a>
                 </div>
-                <div className={styles.menuGroup}>
+                <div className={styles.menuGroup2}>
                     <img src="Rectangle 17.png" className={styles.squareIcon}></img>
                     <a href="" className={styles.menuItem}>Other Projects</a>
                 </div>
-                <div className={styles.menuGroup}>
+                <div className={styles.menuGroup2}>
                     <img src="Rectangle 17.png" className={styles.squareIcon}></img>
                     <a href="" className={styles.menuItem}>About Me</a>
                 </div>
