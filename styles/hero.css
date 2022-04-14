@@ -16,10 +16,26 @@
 .hero-left
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
 }
+
+.list-div1, .list-div2, .list-div3
+{
+    width: 37%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list-header1, .list-header2, .list-header3
+{
+    text-align: baseline;
+    margin-top: 24px;
+}
+
 
 .hero-right
 {
@@ -47,5 +63,19 @@
 {
     width: 30%;
     /* z-index: 1; */
-
+    transition: .5s;
 }
+
+.portrait2 {
+    width: 30%;
+    /* z-index: 1; */
+    transition: .5s;
+}
+
+
+.squareIcon {
+    width: 1.2em;
+    z-index: 1;
+
+  }
+  
