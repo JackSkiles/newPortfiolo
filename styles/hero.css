@@ -8,6 +8,8 @@
 .hero-inner
 {
     display: flex;
+    /* flex-direction: column-reverse; */
+    flex-wrap: wrap;
     /* justify-content: space-around; */
     height: 80%;
     z-index: -0;
@@ -20,6 +22,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;
+    z-index: 3;
 }
 
 .list-div1, .list-div2, .list-div3
@@ -27,22 +30,36 @@
     position: relative;
     top: 75px;
     left: 75px;
-    width: 37%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.icon-div1, .icon-div2, .icon-div3
+.list-div1-bottom, .list-div2-bottom, .list-div3-bottom
 {
+    position: relative;
+    top: 75px;
+    left: 75px;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-div1, .icon-div2, .icon-div3, .icon-div1-bottom, .icon-div2-bottom, .icon-div3-bottom
+{
+    position: relative;
     background-color: #021D32;
     width: 20px;
     height: 20px;
     border-radius: 4px;
+    transition: .5s;
 }
 
-.icon-div1-show, .icon-div2-show, .icon-div3-show
+.icon-div1-front, .icon-div2-front, .icon-div3-front
 {
+    
     background-color: #FEC961;
     width: 20px;
     height: 20px;
@@ -52,8 +69,8 @@
 {
     position: relative;
     top: 75px;
-    left: 100px;
-    width: 37%;
+    left: 130px;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -61,10 +78,19 @@
     border-radius: 8px;
 }
 
-.list-header1, .list-header2, .list-header3
+.list-header1, .list-header2, .list-header3, .list-header1-front, .list-header2-front, .list-header3-front, .list-header1-bottom, .list-header2-bottom, .list-header3-bottom
 {
     text-align: baseline;
-    margin-top: 24px;
+    font-size: 1.6vw;
+    margin-top: 1.7vw;
+    white-space: nowrap;
+}
+
+.list-header1-front, .list-header2-front, .list-header3-front
+{
+    text-align: baseline;
+    /* margin-top: 24px; */
+    color: white;
 }
 
 

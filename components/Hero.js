@@ -3,17 +3,20 @@ import { useState } from 'react';
 
 export default function Hero() {
     const [portrait, setImg] = useState("Mask Group 4.png");
+    const [list1, setList1] = useState("1");
+    const [list2, setList2] = useState("2-front");
+    const [list3, setList3] = useState("3-bottom");
     const [classN, setClass] = useState("portrait");
 
 
     const handleMouseEnter = () => {
         console.log("hello");
         setImg("profilepic.png");
-        setClass("portrait2");
+        // setClass("portrait2");
     }
     const handleMouseLeave = () => {
         setImg("Mask Group 4.png");
-        setClass("portrait");
+        // setClass("portrait");
     }
 
     return (
@@ -21,18 +24,18 @@ export default function Hero() {
             <div className='hero-Main'>
                 <div className='hero-inner' >
                     <div className='hero-left'>
-                        <div className='list-div1'>
-                            <div className='icon-div1'></div>
+                        <div className={`list-div${list1}`}>
+                            <div className={`icon-div${list1}`}></div>
                             {/* <img src="Rectangle 17.png" className="squareIcon"></img> */}
-                            <h2 className='list-header1'>SOFTWARE ENGINEER</h2>
+                            <h2 className={`list-header${list1}`}>SOFTWARE ENGINEER</h2>
                         </div>
-                        <div className='list-div1'>
-                            <div className='icon-div2'></div>
-                            <h2 className='list-header2'>SOFTWARE ENGINEER</h2>
+                        <div className={`list-div${list2}`}>
+                            <div className={`icon-div${list2}`}></div>
+                            <h2 className={`list-header${list2}`}>SOFTWARE ENGINEER</h2>
                         </div>
-                        <div className='list-div1'>
-                            <div className='icon-div3'></div>
-                            <h2 className='list-header3'>SOFTWARE ENGINEER</h2>
+                        <div className={`list-div${list3}`}>
+                            <div className={`icon-div${list3}`}></div>
+                            <h2 className={`list-header${list3}`}>SOFTWARE ENGINEER</h2>
                         </div>
                     </div>
                     <div className='hero-right'>
