@@ -24,10 +24,41 @@
 
 .list-div1, .list-div2, .list-div3
 {
+    position: relative;
+    top: 75px;
+    left: 75px;
     width: 37%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.icon-div1, .icon-div2, .icon-div3
+{
+    background-color: #021D32;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.icon-div1-show, .icon-div2-show, .icon-div3-show
+{
+    background-color: #FEC961;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+.list-div1-front, .list-div2-front, .list-div3-front
+{
+    position: relative;
+    top: 75px;
+    left: 100px;
+    width: 37%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #021D32;
+    border-radius: 8px;
 }
 
 .list-header1, .list-header2, .list-header3

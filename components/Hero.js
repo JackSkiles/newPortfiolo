@@ -22,22 +22,23 @@ export default function Hero() {
                 <div className='hero-inner' >
                     <div className='hero-left'>
                         <div className='list-div1'>
-                            <img src="Rectangle 17.png" className="squareIcon"></img>
+                            <div className='icon-div1'></div>
+                            {/* <img src="Rectangle 17.png" className="squareIcon"></img> */}
                             <h2 className='list-header1'>SOFTWARE ENGINEER</h2>
                         </div>
                         <div className='list-div1'>
-                            <img src="Rectangle 17.png" className="squareIcon"></img>
+                            <div className='icon-div2'></div>
                             <h2 className='list-header2'>SOFTWARE ENGINEER</h2>
                         </div>
                         <div className='list-div1'>
-                            <img src="Rectangle 17.png" className="squareIcon"></img>
+                            <div className='icon-div3'></div>
                             <h2 className='list-header3'>SOFTWARE ENGINEER</h2>
                         </div>
                     </div>
                     <div className='hero-right'>
                         <div className='hero-img-div' onMouseEnter={handleMouseEnter}
-                                onMouseLeave={handleMouseLeave} >
-                            <img src={portrait} className={classN}  />
+                            onMouseLeave={handleMouseLeave} >
+                            <img src={portrait} className={classN} />
                             {/* <button>Hello</button> */}
                         </div>
                     </div>
