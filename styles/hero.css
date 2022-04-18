@@ -17,8 +17,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: space-around; */
     width: 50%;
     z-index: 3;
 }
@@ -29,8 +29,8 @@
 
 .list-div1, .list-div2, .list-div3 {
     position: absolute;
-    top: 200px;
-    left: 275px;
+    top: 35%;
+    left: 29%;
     /* width: 40%; */
     display: flex;
     justify-content: center;
@@ -42,8 +42,8 @@
 
 .list-div1-bottom, .list-div2-bottom, .list-div3-bottom {
     position: absolute;
-    top: 370px;
-    left: 275px;
+    top: 70%;
+    left: 29%;
     /* width: 40%; */
     display: flex;
     justify-content: center;
@@ -55,8 +55,8 @@
 
 .list-div1-front, .list-div2-front, .list-div3-front {
     position: absolute;
-    top: 285px;
-    left: 330px;
+    top: 52%;
+    left: 34%;
     /* width: 40%; */
     display: flex;
     justify-content:center;
@@ -64,7 +64,7 @@
     background-color: #021D32;
     padding: 0px 30px 0px 30px;
     border-radius: 8px;
-    box-shadow: -1px 10px 30px 15px rgb(197, 197, 197);
+    box-shadow: -1px 10px 20px 5px rgb(197, 197, 197);
     transition: .5s;
 
 }
@@ -99,6 +99,7 @@
     text-align: baseline;
     font-size: 1.4vw;
     margin-top: 1.7vw;
+    letter-spacing: .2vw;
     white-space: nowrap;
     transition: .5s;
 
