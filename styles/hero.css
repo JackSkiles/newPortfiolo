@@ -1,12 +1,10 @@
-.hero-Main
-{
+.hero-Main {
     /* display: flex; */
     /* justify-content: center; */
     height: 700px;
 }
 
-.hero-inner
-{
+.hero-inner {
     display: flex;
     /* flex-direction: column-reverse; */
     flex-wrap: wrap;
@@ -15,8 +13,8 @@
     z-index: -0;
 }
 
-.hero-left
-{
+.hero-left {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,70 +23,78 @@
     z-index: 3;
 }
 
-.list-div1, .list-div2, .list-div3
-{
-    position: relative;
-    top: 75px;
-    left: 75px;
-    width: 40%;
+#listDiv {
+    margin: 10px 0px 10px 0px;
+}
+
+.list-div1, .list-div2, .list-div3 {
+    position: absolute;
+    top: 200px;
+    left: 275px;
+    /* width: 40%; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 0px 30px 0px 30px;
     align-items: center;
     transition: .5s;
 
 }
 
-.list-div1-bottom, .list-div2-bottom, .list-div3-bottom
-{
-    position: relative;
-    top: 75px;
-    left: 75px;
-    width: 40%;
+.list-div1-bottom, .list-div2-bottom, .list-div3-bottom {
+    position: absolute;
+    top: 370px;
+    left: 275px;
+    /* width: 40%; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    padding: 0px 30px 0px 30px;
     transition: .5s;
 
 }
 
-.icon-div1, .icon-div2, .icon-div3, .icon-div1-bottom, .icon-div2-bottom, .icon-div3-bottom
-{
-    position: relative;
-    background-color: #021D32;
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    transition: .5s;
-}
-
-.icon-div1-front, .icon-div2-front, .icon-div3-front
-{
-    
-    background-color: #FEC961;
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
-    transition: .5s;
-
-}
-.list-div1-front, .list-div2-front, .list-div3-front
-{
-    position: relative;
-    top: 75px;
-    left: 130px;
-    width: 40%;
+.list-div1-front, .list-div2-front, .list-div3-front {
+    position: absolute;
+    top: 285px;
+    left: 330px;
+    /* width: 40%; */
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     align-items: center;
     background-color: #021D32;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 30px 0px 30px;
     border-radius: 8px;
     transition: .5s;
 
 }
 
-.list-header1, .list-header2, .list-header3, .list-header1-front, .list-header2-front, .list-header3-front, .list-header1-bottom, .list-header2-bottom, .list-header3-bottom
+/* .list-div1-bottom
 {
+    top: 225px;
+} */
+
+.icon-div1, .icon-div2, .icon-div3, .icon-div1-bottom, .icon-div2-bottom, .icon-div3-bottom {
+    position: relative;
+    background-color: #021D32;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 20px;
+    transition: .5s;
+}
+
+.icon-div1-front, .icon-div2-front, .icon-div3-front {
+
+    background-color: #FEC961;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 20px;
+    transition: .5s;
+
+}
+
+.list-header1, .list-header2, .list-header3, .list-header1-front, .list-header2-front, .list-header3-front, .list-header1-bottom, .list-header2-bottom, .list-header3-bottom {
     text-align: baseline;
     font-size: 1.4vw;
     margin-top: 1.7vw;
@@ -97,8 +103,7 @@
 
 }
 
-.list-header1-front, .list-header2-front, .list-header3-front
-{
+.list-header1-front, .list-header2-front, .list-header3-front {
     text-align: baseline;
     /* margin-top: 24px; */
     color: white;
@@ -107,8 +112,7 @@
 }
 
 
-.hero-right
-{
+.hero-right {
     position: fixed;
     top: -600px;
     right: -600px;
@@ -121,8 +125,7 @@
 }
 
 
-.hero-img-div
-{
+.hero-img-div {
     position: relative;
     top: 58%;
     left: 15%;
@@ -130,8 +133,7 @@
     /* z-index: 1; */
 }
 
-.portrait
-{
+.portrait {
     width: 30%;
     /* z-index: 1; */
     transition: .5s;
@@ -148,5 +150,4 @@
     width: 1.2em;
     z-index: 1;
 
-  }
-  
+}

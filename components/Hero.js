@@ -30,7 +30,7 @@ export default function Hero() {
                 console.log("issue")
             }
             console.log('This will run every second!');
-        }, 1000);
+        }, 2500);
         return () => clearInterval(interval);
     });
 
@@ -50,18 +50,18 @@ export default function Hero() {
             <div className='hero-Main'>
                 <div className='hero-inner' >
                     <div className='hero-left'>
-                        <div className={`list-div${list1}`}>
+                        <div className={`list-div${list1}`} id="listDiv">
                             <div className={`icon-div${list1}`}></div>
                             {/* <img src="Rectangle 17.png" className="squareIcon"></img> */}
                             <h2 className={`list-header${list1}`}>SOFTWARE ENGINEER</h2>
                         </div>
-                        <div className={`list-div${list2}`}>
+                        <div className={`list-div${list2}`} id="listDiv">
                             <div className={`icon-div${list2}`}></div>
-                            <h2 className={`list-header${list2}`}>SOFTWARE ENGINEER</h2>
+                            <h2 className={`list-header${list2}`}>GRAPHIC DESIGNER</h2>
                         </div>
-                        <div className={`list-div${list3}`}>
+                        <div className={`list-div${list3}`} id="listDiv">
                             <div className={`icon-div${list3}`}></div>
-                            <h2 className={`list-header${list3}`}>SOFTWARE ENGINEER</h2>
+                            <h2 className={`list-header${list3}`}>WEB DEVELOPER</h2>
                         </div>
                     </div>
                     <div className='hero-right'>
