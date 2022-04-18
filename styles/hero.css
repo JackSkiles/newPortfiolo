@@ -64,6 +64,7 @@
     background-color: #021D32;
     padding: 0px 30px 0px 30px;
     border-radius: 8px;
+    box-shadow: -1px 10px 30px 15px rgb(197, 197, 197);
     transition: .5s;
 
 }
