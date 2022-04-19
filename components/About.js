@@ -11,6 +11,23 @@ export default function About() {
             I'm a software engineer and designer from Chattanooga, TN. I have been working on websites, software and graphic design over the past 3 years. Since then I have learned many new technologies, languages and techniques to further the craft. I had a lot of fun making this site and the projects presented, so I hope you enjoy!
           </p>
         </div>
+
+      </div>
+      <div className="ProjectsBox">
+        <div className="projectHeaderBox">
+          <h3 className="projectHeader">Development Projects</h3>
+        </div>
+        <div className="projectsMain">
+
+        </div>
+      </div>
+      <div className="ProjectsBox">
+        <div className="projectHeaderBox">
+          <h3 className="projectHeader">Development Projects</h3>
+        </div>
+        <div className="projectsMain">
+
+        </div>
       </div>
     </div>
   )
