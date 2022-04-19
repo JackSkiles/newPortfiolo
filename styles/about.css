@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&display=swap');
 .about-main
 {
     /* background-color: #021D32; */
@@ -13,13 +14,19 @@
 
 .about-box
 {
-    width: 40%;
+    width: 35%;
     background-color: white;
-    padding: 20px;
+    padding: 40px;
     border-radius: 4px;
+    /* border: solid rgb(119, 119, 119) 1px; */
+    box-shadow: -30px 30px 0px 0px #FFD88B;
 }
 
 .about-text
 {
+    font-family: 'Open Sans Bold', sans-serif;
+    line-height: 30px;
+    /* font-weight: 900; */
+    font-weight: normal;
     text-align: center;
 }
