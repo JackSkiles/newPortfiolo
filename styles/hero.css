@@ -115,7 +115,7 @@
 
 
 .hero-right {
-    position: fixed;
+    position: absolute;
     top: -600px;
     right: -600px;
     border-radius: 50%;
@@ -152,4 +152,10 @@
     width: 1.2em;
     z-index: 1;
 
+}
+
+.seperatorDiv
+{
+    margin: 300px 0px 300px 0px;
+    background-color: white;
 }

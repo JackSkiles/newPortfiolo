@@ -1,4 +1,25 @@
 .about-main
 {
     /* background-color: #021D32; */
+    
+}
+
+.about-column
+{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-box
+{
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.about-text
+{
+    text-align: center;
 }

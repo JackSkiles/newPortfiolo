@@ -73,6 +73,8 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
+            <div className='seperatorDiv'>
+            </div>
         </div>
     )
 }
