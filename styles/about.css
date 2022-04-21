@@ -37,11 +37,20 @@
     border-radius: 4px 4px 0px 0px;
 }
 
-.ProjectsBox
+
+.outerProjectsBox
 {
     margin-top: 300px;
     display: flex;
+    /* align-items: center; */
     justify-content: center;
+}
+
+.ProjectsBox
+{
+   display: flex;
+   justify-content: flex-start;
+   width: 50%;
 }
 
 .projectHeader

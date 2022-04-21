@@ -13,20 +13,24 @@ export default function About() {
         </div>
 
       </div>
-      <div className="ProjectsBox">
-        <div className="projectHeaderBox">
-          <h3 className="projectHeader">Development Projects</h3>
-        </div>
-        <div className="projectsMain">
+      <div className="outerProjectsBox">
+        <div className="ProjectsBox">
+          <div className="projectHeaderBox">
+            <h3 className="projectHeader">Development Projects</h3>
+          </div>
+          <div className="projectsMain">
 
+          </div>
         </div>
       </div>
-      <div className="ProjectsBox">
-        <div className="projectHeaderBox">
-          <h3 className="projectHeader">Development Projects</h3>
-        </div>
-        <div className="projectsMain">
-
+      <div className="outerProjectsBox">
+        <div className="ProjectsBox">
+          <div className="projectHeaderBox">
+            <h3 className="projectHeader">Development Projects</h3>
+          </div>
+          <div className="projectsMain">
+            
+          </div>
         </div>
       </div>
     </div>
