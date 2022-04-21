@@ -28,6 +28,35 @@ export default function About() {
                 <img src="BThree.png" className="projectImg"></img>
               </div>
               <div className="project">
+                <img src="kanakeyboard.png" className="projectImg"></img>
+              </div>
+            </div>
+            <div className="projectsRow">
+              <div className="project">
+                <img src="Tic.png" className="projectImg"></img>
+              </div>
+              <div className="project">
+                <img src="Sceneit.png" className="projectImg"></img>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="outerProjectsBox">
+        <div className="ProjectsBox">
+          <div className="projectHeaderBox">
+            <div className='icon-div1-front'></div>
+            <h3 className="projectHeader">Design Projects</h3>
+          </div>
+          <div className="projectsMain">
+            <div className="projectsRow">
+              <div className="project">
+                <img src="heavyWeather.png" className="projectImg"></img>
+              </div>
+              <div className="project">
+                <img src="BThree.png" className="projectImg"></img>
+              </div>
+              <div className="project">
                 <img src="BThree.png" className="projectImg"></img>
               </div>
             </div>
@@ -41,24 +70,6 @@ export default function About() {
               <div className="project">
                 <img src="BThree.png" className="projectImg"></img>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="outerProjectsBox">
-        <div className="ProjectsBox">
-          <div className="projectHeaderBox">
-            <h3 className="projectHeader">Development Projects</h3>
-          </div>
-          <div className="projectsMain">
-            <div className="project">
-              <img src="heavyWeather.png" className="projectImg"></img>
-            </div>
-            <div className="project">
-              <img src="BThree.png" className="projectImg"></img>
-            </div>
-            <div className="project">
-              <img src="BThree.png" className="projectImg"></img>
             </div>
           </div>
         </div>
