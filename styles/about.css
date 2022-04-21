@@ -31,12 +31,6 @@
     text-align: center;
 }
 
-.projectHeaderBox
-{
-    background-color: white;
-    border-radius: 4px 4px 0px 0px;
-}
-
 
 .outerProjectsBox
 {
@@ -50,13 +44,53 @@
 {
    display: flex;
    justify-content: flex-start;
+   flex-direction: column;
    width: 50%;
+}
+
+
+.projectHeaderBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px 4px 0px 0px;
+    width: 35%;
+    border: solid rgb(150, 150, 150) 1px;
+
 }
 
 .projectHeader
 {
-    font-family: 'Open Sans Bold', sans-serif;
-
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
     /* color: white; */
     font-weight: bold;
+}
+
+.projectsMain
+{
+    background-color: #1c2936;
+    display: flex;
+    border-radius: 0px 4px 4px 4px;
+}
+
+.projectsRow
+{
+    display: flex;
+    justify-content: center;
+}
+
+.project
+{
+    /* position: relative;
+    top: 0%; */
+    width: 100%;
+}
+
+.projectImg
+{
+
+    Width: 100%;
 }

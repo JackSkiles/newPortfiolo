@@ -16,10 +16,18 @@ export default function About() {
       <div className="outerProjectsBox">
         <div className="ProjectsBox">
           <div className="projectHeaderBox">
+            <div className='icon-div1-front'></div>
             <h3 className="projectHeader">Development Projects</h3>
           </div>
           <div className="projectsMain">
-
+            <div className="projectsRow">
+              <div className="project">
+                <img src="heavyWeather.png" className="projectImg"></img>
+              </div>
+              <div className="project">
+                <img src="heavyWeather.png" className="projectImg"></img>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -29,7 +37,7 @@ export default function About() {
             <h3 className="projectHeader">Development Projects</h3>
           </div>
           <div className="projectsMain">
-            
+
           </div>
         </div>
       </div>
