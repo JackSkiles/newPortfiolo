@@ -83,6 +83,7 @@
 {
     display: flex;
     justify-content: center;
+    
 }
 
 .project
@@ -91,12 +92,12 @@
     display: flex;
     justify-content: center;
     top: 0%;
-    margin-top: 30px;
-    width: 100%;
+    margin: 30px 30px 0px 30px;
+    /* width: 100%; */
 }
 
 .projectImg
 {
-
-    Width: 80%;
+    max-width: 250px;
+    /* Width: 80%; */
 }
