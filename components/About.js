@@ -25,7 +25,21 @@ export default function About() {
                 <img src="heavyWeather.png" className="projectImg"></img>
               </div>
               <div className="project">
+                <img src="BThree.png" className="projectImg"></img>
+              </div>
+              <div className="project">
+                <img src="BThree.png" className="projectImg"></img>
+              </div>
+            </div>
+            <div className="projectsRow">
+              <div className="project">
                 <img src="heavyWeather.png" className="projectImg"></img>
+              </div>
+              <div className="project">
+                <img src="BThree.png" className="projectImg"></img>
+              </div>
+              <div className="project">
+                <img src="BThree.png" className="projectImg"></img>
               </div>
             </div>
           </div>
@@ -37,7 +51,15 @@ export default function About() {
             <h3 className="projectHeader">Development Projects</h3>
           </div>
           <div className="projectsMain">
-
+            <div className="project">
+              <img src="heavyWeather.png" className="projectImg"></img>
+            </div>
+            <div className="project">
+              <img src="BThree.png" className="projectImg"></img>
+            </div>
+            <div className="project">
+              <img src="BThree.png" className="projectImg"></img>
+            </div>
           </div>
         </div>
       </div>
