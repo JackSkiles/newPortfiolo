@@ -3,6 +3,29 @@ import { useState, useEffect } from 'react';
 // import backgroundImg from "./public/background.png"
 
 export default function About() {
+  const [open, setOpen] = useState("Closed");
+
+
+  const onClick = () => {
+    console.log(hide);
+    // console.log(mobileMenuButton)
+    if (open === "Open") {
+      const interval = setInterval(() => {
+        console.log("hello");
+        setOpen("Closed");
+        
+      }, 2500);
+      return () => clearInterval(interval);
+    }
+    else if (open === "Closed") {
+      const interval = setInterval(() => {
+        console.log("hello");
+        setOpen("Open");
+
+      }, 2500);
+      return () => clearInterval(interval);
+    }
+  }
   return (
     <div className="about-main" style={{ backgroundImage: "url(/background.png)" }}>
       <div className="about-column">
@@ -22,7 +45,9 @@ export default function About() {
           <div className="projectsMain">
             <div className="projectsRow">
               <div className="project">
-                <img src="heavyWeather.png" className="projectImg"></img>
+                <img src="Gif.gif" className="projectGif"></img>
+                {/* <img src="BThree.png" className="projectImg"></img> */}
+                {/* <video width="320" height="240" controls><source src="frame2.mov"></source></video> */}
               </div>
               <div className="project">
                 <img src="BThree.png" className="projectImg"></img>
