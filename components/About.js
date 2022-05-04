@@ -4,23 +4,25 @@ import { useState, useEffect } from 'react';
 
 export default function About() {
   const [open, setOpen] = useState("HeavyWeather.png");
+  const [gif, setGif] = useState("Img");
 
 
   const onClick = () => {
     // console.log(hide);
     // console.log(mobileMenuButton)
     if (open === "HeavyWeather.png") {
-        console.log("hello");
-        setOpen("Gif.gif");
-        setOpen("Gif.gif");
+      console.log("hello");
+      setOpen("Gif.gif");
+      setTimeout(function () {
+        setOpen("folder14.png");
+      }, 1000);
+      setGif("Gif");
     }
-    else if (open === "Closed") {
-      const interval = setInterval(() => {
-        console.log("hello");
-        setOpen("Open");
+    else if (open === "folder14.png") {
 
-      }, 2500);
-      return () => clearInterval(interval);
+      console.log("hello");
+      setOpen("HeavyWeather.png");
+      setGif("Img");
     }
   }
   return (
@@ -42,7 +44,7 @@ export default function About() {
           <div className="projectsMain">
             <div className="projectsRow">
               <div className="project">
-                <img src={open} className="projectGif" onClick={onClick}></img>
+                <img src={open} className={`project${gif}`} onClick={onClick}></img>
                 {/* <img src="BThree.png" className="projectImg"></img> */}
                 {/* <video width="320" height="240" controls><source src="frame2.mov"></source></video> */}
               </div>
