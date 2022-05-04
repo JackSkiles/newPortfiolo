@@ -29,13 +29,13 @@ export default function Hero() {
             {
                 console.log("issue")
             }
-            console.log('This will run every second!');
+            // console.log('This will run every second!');
         }, 2500);
         return () => clearInterval(interval);
     });
 
     const handleMouseEnter = () => {
-        console.log("hello");
+        // console.log("hello");
         setImg("profilepic.png");
         // setClass("portrait2");
     }

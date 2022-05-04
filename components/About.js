@@ -3,19 +3,16 @@ import { useState, useEffect } from 'react';
 // import backgroundImg from "./public/background.png"
 
 export default function About() {
-  const [open, setOpen] = useState("Closed");
+  const [open, setOpen] = useState("HeavyWeather.png");
 
 
   const onClick = () => {
-    console.log(hide);
+    // console.log(hide);
     // console.log(mobileMenuButton)
-    if (open === "Open") {
-      const interval = setInterval(() => {
+    if (open === "HeavyWeather.png") {
         console.log("hello");
-        setOpen("Closed");
-        
-      }, 2500);
-      return () => clearInterval(interval);
+        setOpen("Gif.gif");
+        setOpen("Gif.gif");
     }
     else if (open === "Closed") {
       const interval = setInterval(() => {
@@ -45,7 +42,7 @@ export default function About() {
           <div className="projectsMain">
             <div className="projectsRow">
               <div className="project">
-                <img src="Gif.gif" className="projectGif"></img>
+                <img src={open} className="projectGif" onClick={onClick}></img>
                 {/* <img src="BThree.png" className="projectImg"></img> */}
                 {/* <video width="320" height="240" controls><source src="frame2.mov"></source></video> */}
               </div>
