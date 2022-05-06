@@ -15,7 +15,7 @@ export default function About() {
       setOpen("Gif.gif");
       setTimeout(function () {
         setOpen("folder14.png");
-      }, 1000);
+      }, 270);
       setGif("Gif");
     }
     else if (open === "folder14.png") {
