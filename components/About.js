@@ -6,28 +6,33 @@ export default function About() {
   const [devProjects, setProjects] = useState(
     [
       {
-        name: "HeavyWeather.png",
-        open: "",
+        src: "HeavyWeather.png",
+        name: "HeavyWeather",
+        // open: "HeavyWeather.png",
         id: 0
       },
       {
-        name: "BThree.png",
-        open: "",
+        src: "BThree.png",
+        name: "BThree",
+        // open: "",
         id: 1
       },
       {
-        name: "kanakeyboard.png",
-        open: "",
+        src: "kanakeyboard.png",
+        name: "kanakeyboard",
+        // open: "",
         id: 2
       },
       {
-        name: "Tic.png",
-        open: "",
+        src: "Tic.png",
+        name: "Tic",
+        // open: "",
         id: 3
       },
       {
-        name: "Sceneit.png",
-        open: "",
+        src: "Sceneit.png",
+        name: "Sceneit",
+        // open: "",
         id: 4
       }
     ]
@@ -40,23 +45,31 @@ export default function About() {
     e.preventDefault();
     // console.log(hide);
     // console.log(mobileMenuButton)
-    console.log(e.target.open);
-    const open = e.target.name;
-    if (open === "") {
+    console.log(e.target.src.length);
+    const src = e.target.name;
+    // console.log(e.target.src.toString());
+    const length = src.length;
+    console.log(src.slice(length - 4, length));
+    if (src.slice(length - 4, length) != "open") {
       console.log("hello");
       e.target.src = "Gif.gif";
       setTimeout(function () {
-      e.target.src = "folder14.png";
-      e.target.name = "open";
+        e.target.src = `${src}open.png`;
+        e.target.name = `${src}open`;
+        console.log(src)
+        // e.target.name = "open";
         // setOpen("folder14.png");
       }, 270);
       setGif("Gif");
     }
-    else if (open === "open") {
-
+    else if (src.slice(length - 4, length) == "open") {
+      console.log(src)
+      const newName = src.slice(0, length - 4);
+      console.log(newName);
       console.log("hello");
-      e.target.src = "heavyweather.png";
-      e.target.name = "";
+      e.target.src = `${newName}.png`;
+      e.target.name = `${newName}`;
+      // e.target.name = "";
       // setOpen("HeavyWeather.png");
       // setGif("Img");
     }
@@ -82,7 +95,7 @@ export default function About() {
               {devProjects.map((item) => {
                 return (
                   <div className="project">
-                    <img src={item.name} className={`projects${gif}`} onClick={onClick} name={item.open}></img>
+                    <img src={item.src} className={`projects${gif}`} name={item.name} onClick={onClick}></img>
                   </div>
                 )
               })}
