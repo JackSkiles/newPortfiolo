@@ -3,36 +3,37 @@ import { useState, useEffect } from 'react';
 // import backgroundImg from "./public/background.png"
 
 export default function About() {
+  // array state for development project storage
   const [devProjects, setProjects] = useState(
     [
       {
         src: "HeavyWeather.png",
         name: "HeavyWeather",
-        // open: "HeavyWeather.png",
+        gif: "Img",
         id: 0
       },
       {
         src: "BThree.png",
         name: "BThree",
-        // open: "",
+        gif: "Img",
         id: 1
       },
       {
         src: "kanakeyboard.png",
         name: "kanakeyboard",
-        // open: "",
+        gif: "Img",
         id: 2
       },
       {
         src: "Tic.png",
         name: "Tic",
-        // open: "",
+        gif: "Img",
         id: 3
       },
       {
         src: "Sceneit.png",
         name: "Sceneit",
-        // open: "",
+        gif: "Img",
         id: 4
       }
     ]
@@ -40,35 +41,58 @@ export default function About() {
   // const [open, setOpen] = useState("");
   const [gif, setGif] = useState("Img");
 
-
+  // Click event for each project that will open folder by playing a Gif animation
   const onClick = (e) => {
     e.preventDefault();
-    console.log(e.target.src.length);
-    const src = e.target.name;
-    const length = src.length;
-    console.log(src.slice(length - 4, length));
-    if (src.slice(length - 4, length) != "open") {
+    // console.log(e.target.src.length);
+
+    // creates new name variable to use in function, based on target project's name value
+    const name = e.target.name;
+
+    // creates int for name length to use in if logic
+    const length = name.length;
+    // console.log(src.slice(length - 4, length));
+
+    // if src variable at index point length - 4 to length = open, run function.
+    if (name.slice(length - 4, length) != "open") {
       console.log("hello");
+
+      // Sets target projects source value to Gif to allow animation to run. Timer is set to length of Gif to set source back to image.
       e.target.src = "Gif.gif";
+
       setTimeout(function () {
-        e.target.src = `${src}open.png`;
-        e.target.name = `${src}open`;
-        console.log(src)
+
+        e.target.src = `${name}open.png`;
+
+        e.target.name = `${name}open`;
+        
+        console.log(name)
         // e.target.name = "open";
         // setOpen("folder14.png");
       }, 270);
-      setGif("Gif");
+
+      // sets className to change img sizing when folder is open
+      e.target.className="projectGif"
     }
-    else if (src.slice(length - 4, length) == "open") {
-      console.log(src)
-      const newName = src.slice(0, length - 4);
+
+    // acts the same as previous if statement, only in reverse
+    else if (name.slice(length - 4, length) == "open") {
+
+      console.log(name)
+
+      // creates newName variable that takes just the name of target project, without the text open, to reset it to closed.
+      const newName = name.slice(0, length - 4);
+
       console.log(newName);
+
       console.log("hello");
+
       e.target.src = `${newName}.png`;
+
       e.target.name = `${newName}`;
       // e.target.name = "";
       // setOpen("HeavyWeather.png");
-      // setGif("Img");
+      e.target.className="projectImg"
     }
   }
   return (
@@ -89,10 +113,12 @@ export default function About() {
           </div>
           <div className="projectsMain">
             <div className="projectsRow">
+              {/* maps through devProjects state to list out each project with data intact */}
               {devProjects.map((item) => {
                 return (
                   <div className="project">
-                    <img src={item.src} className={`projects${gif}`} name={item.name} onClick={onClick}></img>
+                    {/* Gives img tag values related to the project, or item, being mapped over */}
+                    <img src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif"></img>
                   </div>
                 )
               })}

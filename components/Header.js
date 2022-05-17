@@ -6,14 +6,17 @@ import { useState } from 'react';
 export default function Header(props) {
     const [hide, setHide] = useState("Hide");
 
-
+    // click event to hide or open mobile menu.
     const onClick = () => {
         console.log(hide);
         // console.log(mobileMenuButton)
+
+        // if mobile menu is hidden, this will remove that text to set it to shown
         if(hide === "Hide")
         {
             setHide("");
         }
+        // else if mobile menu is showing, this will add text Hide to set it to hidden.
         else if(hide === "")
         {
             setHide("Hide");
