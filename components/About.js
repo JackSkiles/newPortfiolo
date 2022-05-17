@@ -7,46 +7,58 @@ export default function About() {
     [
       {
         name: "HeavyWeather.png",
+        open: "",
         id: 0
       },
       {
         name: "BThree.png",
+        open: "",
         id: 1
       },
       {
         name: "kanakeyboard.png",
+        open: "",
         id: 2
       },
       {
         name: "Tic.png",
+        open: "",
         id: 3
       },
       {
         name: "Sceneit.png",
+        open: "",
         id: 4
       }
     ]
   )
-  const [open, setOpen] = useState("HeavyWeather.png");
+  // const [open, setOpen] = useState("");
   const [gif, setGif] = useState("Img");
 
 
-  const onClick = () => {
+  const onClick = (e) => {
+    e.preventDefault();
     // console.log(hide);
     // console.log(mobileMenuButton)
-    if (open === "HeavyWeather.png") {
+    console.log(e.target.open);
+    const open = e.target.name;
+    if (open === "") {
       console.log("hello");
-      setOpen("Gif.gif");
+      e.target.src = "Gif.gif";
       setTimeout(function () {
-        setOpen("folder14.png");
+      e.target.src = "folder14.png";
+      e.target.name = "open";
+        // setOpen("folder14.png");
       }, 270);
       setGif("Gif");
     }
-    else if (open === "folder14.png") {
+    else if (open === "open") {
 
       console.log("hello");
-      setOpen("HeavyWeather.png");
-      setGif("Img");
+      e.target.src = "heavyweather.png";
+      e.target.name = "";
+      // setOpen("HeavyWeather.png");
+      // setGif("Img");
     }
   }
   return (
@@ -70,7 +82,7 @@ export default function About() {
               {devProjects.map((item) => {
                 return (
                   <div className="project">
-                    <img src={item.name} className={`projects${gif}`} onClick={onClick} key={item.id}></img>
+                    <img src={item.name} className={`projects${gif}`} onClick={onClick} name={item.open}></img>
                   </div>
                 )
               })}
