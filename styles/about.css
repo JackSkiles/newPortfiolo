@@ -113,3 +113,8 @@
     max-width: 400px;
     /* Width: 80%; */
 }
+
+.folder-content-hide
+{
+    display: none;
+}

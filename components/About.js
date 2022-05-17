@@ -54,60 +54,46 @@ export default function About() {
     ]
   )
   // const [open, setOpen] = useState("");
-  const [gif, setGif] = useState("Img");
+  const [open, setOpen] = useState("folder-content-hide");
 
   // Click event for each project that will open folder by playing a Gif animation
   const onClick = (e) => {
     e.preventDefault();
     // console.log(e.target.src.length);
-
     // creates new name variable to use in function, based on target project's name value
     const name = e.target.name;
-
     // creates int for name length to use in if logic
     const length = name.length;
     // console.log(src.slice(length - 4, length));
-
     // if src variable at index point length - 4 to length = open, run function.
     if (name.slice(length - 4, length) != "open") {
       console.log("hello");
-
       // Sets target projects source value to Gif to allow animation to run. Timer is set to length of Gif to set source back to image.
       e.target.src = "Gif.gif";
-
       setTimeout(function () {
-
         e.target.src = `${name}open.png`;
-
         e.target.name = `${name}open`;
-
         console.log(name)
+        setOpen("folder-content");
         // e.target.name = "open";
         // setOpen("folder14.png");
       }, 270);
-
       // sets className to change img sizing when folder is open
       e.target.className = "projectGif"
     }
-
     // acts the same as previous if statement, only in reverse
     else if (name.slice(length - 4, length) == "open") {
-
       console.log(name)
-
       // creates newName variable that takes just the name of target project, without the text open, to reset it to closed.
       const newName = name.slice(0, length - 4);
-
       console.log(newName);
-
       console.log("hello");
-
       e.target.src = `${newName}.png`;
-
       e.target.name = `${newName}`;
       // e.target.name = "";
       // setOpen("HeavyWeather.png");
       e.target.className = "projectImg"
+      setOpen("folder-content-hide");
     }
   }
   return (
@@ -133,10 +119,10 @@ export default function About() {
                   <div className="project">
                     {/* Gives img tag values related to the project, or item, being mapped over */}
                     <img src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif"></img>
-                    <div className="folder-content-hide">
+                    <div className={open} name={item.id}>
                       <h2 className="folder-header">{item.name}</h2>
                       <p className="folder-text">{item.text}</p>
-                      <a href={item.github} className="folder-link" target="blank">Demo</a>
+                      <a href={item.github} className="folder-link" target="blank" >Demo</a>
                       <a href={item.github} className="folder-link" target="blank">Github link</a>
                     </div>
                   </div>
