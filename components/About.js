@@ -43,11 +43,8 @@ export default function About() {
 
   const onClick = (e) => {
     e.preventDefault();
-    // console.log(hide);
-    // console.log(mobileMenuButton)
     console.log(e.target.src.length);
     const src = e.target.name;
-    // console.log(e.target.src.toString());
     const length = src.length;
     console.log(src.slice(length - 4, length));
     if (src.slice(length - 4, length) != "open") {
