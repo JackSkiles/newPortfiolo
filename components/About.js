@@ -3,6 +3,30 @@ import { useState, useEffect } from 'react';
 // import backgroundImg from "./public/background.png"
 
 export default function About() {
+  const [devProjects, setProjects] = useState(
+    [
+      {
+        name: "HeavyWeather.png",
+        id: 0
+      },
+      {
+        name: "BThree.png",
+        id: 1
+      },
+      {
+        name: "kanakeyboard.png",
+        id: 2
+      },
+      {
+        name: "Tic.png",
+        id: 3
+      },
+      {
+        name: "Sceneit.png",
+        id: 4
+      }
+    ]
+  )
   const [open, setOpen] = useState("HeavyWeather.png");
   const [gif, setGif] = useState("Img");
 
@@ -43,18 +67,24 @@ export default function About() {
           </div>
           <div className="projectsMain">
             <div className="projectsRow">
-              <div className="project">
+              {devProjects.map((item) => {
+                return (
+                  <div className="project">
+                    <img src={item.name} className={`projects${gif}`} onClick={onClick} key={item.id}></img>
+                  </div>
+                )
+              })}
+            </div>
+            {/* <div className="project">
                 <img src={open} className={`project${gif}`} onClick={onClick}></img>
-                {/* <img src="BThree.png" className="projectImg"></img> */}
-                {/* <video width="320" height="240" controls><source src="frame2.mov"></source></video> */}
               </div>
               <div className="project">
                 <img src="BThree.png" className="projectImg"></img>
               </div>
               <div className="project">
                 <img src="kanakeyboard.png" className="projectImg"></img>
-              </div>
-            </div>
+              </div> */}
+            {/* 
             <div className="projectsRow">
               <div className="project">
                 <img src="Tic.png" className="projectImg"></img>
@@ -62,7 +92,7 @@ export default function About() {
               <div className="project">
                 <img src="Sceneit.png" className="projectImg"></img>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
