@@ -2,13 +2,19 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 
 export default function Hero() {
+    // state to set right header img src
     const [portrait, setImg] = useState("Mask Group 4.png");
+    // states to let list item position in rotation. blank indicates top, front indicates center, and bottom indicates bottom
     const [list1, setList1] = useState("1");
     const [list2, setList2] = useState("2-front");
     const [list3, setList3] = useState("3-bottom");
+    
     const [classN, setClass] = useState("portrait");
 
+    // useEffect to change list positions
     useEffect(() => {
+
+        // sets a timer that will run every 2.5 seconds. This will shift the positions of the list items by seting states to new classes, giving an animated effect.
         const interval = setInterval(() => {
             if (list1 == "1") {
                 setList1("1-front");
@@ -34,6 +40,7 @@ export default function Hero() {
         return () => clearInterval(interval);
     });
 
+    // Mouse enter event to check if mouse has entered portrait image. This allows swapping between illustrator image and organic photo.
     const handleMouseEnter = () => {
         // console.log("hello");
         setImg("profilepic.png");

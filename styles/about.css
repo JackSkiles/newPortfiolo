@@ -83,10 +83,10 @@
 .projectsRow
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 40vw;
+    max-width: 70vw;
     
 }
 
@@ -110,6 +110,6 @@
 
 .projectGif
 {
-    max-width: 450px;
+    max-width: 400px;
     /* Width: 80%; */
 }
