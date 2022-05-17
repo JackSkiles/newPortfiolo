@@ -134,8 +134,10 @@ export default function About() {
                     {/* Gives img tag values related to the project, or item, being mapped over */}
                     <img src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif"></img>
                     <div className="folder-content-hide">
-                      <h2 className='folder-header'>{item.name}</h2>
-                      <p className='folder-text'>{item.text}</p>
+                      <h2 className="folder-header">{item.name}</h2>
+                      <p className="folder-text">{item.text}</p>
+                      <a href={item.github} className="folder-link" target="blank">Demo</a>
+                      <a href={item.github} className="folder-link" target="blank">Github link</a>
                     </div>
                   </div>
                 )
