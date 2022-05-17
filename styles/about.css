@@ -118,3 +118,9 @@
 {
     display: none;
 }
+
+.folder-content
+{
+    display: inline;
+    position: relative;
+}
