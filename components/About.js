@@ -29,8 +29,8 @@ export default function About() {
         id: 1
       },
       {
-        src: "kanakeyboard.png",
-        name: "kanakeyboard",
+        src: "kana keyboard.png",
+        name: "kana keyboard",
         gif: "Img",
         thumb: "heavyweatherthumb.png",
         text: "Type text to be converted to Japanese Kana",
