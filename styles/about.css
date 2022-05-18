@@ -137,7 +137,7 @@
     transition: 2s;
 }
 
-.inner-folder
+.inner-folder, .inner-folder-left
 {
     display: flex;
     flex-direction: column;
@@ -148,6 +148,14 @@
     transition: 2s;
 
     /* margin: 50px 0px 50px 0px; */
+}
+
+.inner-folder-left
+{
+    position: absolute;
+    top: 4%;
+    left: -93%;
+    height: 100%;
 }
 
 .folder-header, .folder-link, .folder-text
@@ -163,4 +171,10 @@
     width: 70%;
     font-weight: 600;
     
+}
+
+.thumbnail
+{
+    height: 500px;
+    width: 80%;
 }
