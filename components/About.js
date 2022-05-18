@@ -147,7 +147,7 @@ export default function About() {
                         <h2 className="folder-header">{item.name}</h2>
                         <p className="folder-text">{item.text}</p>
                         <div className="text-box">
-                          <a href={item.github} className="folder-link" target="blank" >Demo</a>
+                          <a href={item.link} className="folder-link" target="blank" >Demo</a>
                           <a href={item.github} className="folder-link" target="blank">Github link</a>
                         </div>
                       </div>
@@ -199,7 +199,7 @@ export default function About() {
                         <h2 className="folder-header">{item.name}</h2>
                         <p className="folder-text">{item.text}</p>
                         <div className="text-box">
-                          <a href={item.github} className="folder-link" target="blank" >Demo</a>
+                          <a href={item.link} className="folder-link" target="blank" >Demo</a>
                           <a href={item.github} className="folder-link" target="blank">Github link</a>
                         </div>
                       </div>
