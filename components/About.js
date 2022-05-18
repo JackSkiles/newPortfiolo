@@ -184,27 +184,29 @@ export default function About() {
             <h3 className="projectHeader">Design Projects</h3>
           </div>
           <div className="projectsMain">
-            <div className="projectsRow">
-              <div className="project">
-                <img src="heavyWeather.png" className="projectImg"></img>
-              </div>
-              <div className="project">
-                <img src="BThree.png" className="projectImg"></img>
-              </div>
-              <div className="project">
-                <img src="BThree.png" className="projectImg"></img>
-              </div>
-            </div>
-            <div className="projectsRow">
-              <div className="project">
-                <img src="heavyWeather.png" className="projectImg"></img>
-              </div>
-              <div className="project">
-                <img src="BThree.png" className="projectImg"></img>
-              </div>
-              <div className="project">
-                <img src="BThree.png" className="projectImg"></img>
-              </div>
+          <div className="projectsRow">
+              {/* maps through devProjects state to list out each project with data intact */}
+              {devProjects.map((item) => {
+                return (
+                  <div className="project">
+                    {/* Gives img tag values related to the project, or item, being mapped over */}
+                    <img src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif" id={item.id}></img>
+                    <div className={item.hide} name={item.id} id="folder-box">
+                      <div className="inner-folder-left">
+                        <img className="thumbnail" src={item.thumb}></img>
+                      </div>
+                      <div className="inner-folder">
+                        <h2 className="folder-header">{item.name}</h2>
+                        <p className="folder-text">{item.text}</p>
+                        <div className="text-box">
+                          <a href={item.github} className="folder-link" target="blank" >Demo</a>
+                          <a href={item.github} className="folder-link" target="blank">Github link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>

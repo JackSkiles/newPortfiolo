@@ -120,8 +120,8 @@
 
 .hero-right {
     position: absolute;
-    top: -600px;
-    right: -600px;
+    top: -65%;
+    right: -40%;
     border-radius: 50%;
     background-color: #0993F6;
     height: 1500px;
