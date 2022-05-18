@@ -108,6 +108,17 @@
     /* Width: 80%; */
 }
 
+.projectImg:hover {
+    opacity: 95%;
+    cursor: pointer;
+}
+
+.projectGif:hover
+{
+    opacity: 90%;
+    cursor: pointer;
+}
+
 .projectGif
 {
     max-width: 450px;
@@ -169,8 +180,8 @@
 .folder-header
 {
     color: rgb(8, 8, 8);
-    background-color: #f8f8f8;
-    border: solid rgb(235, 235, 235) 1px;
+    /* background-color: #f8f8f8; */
+    border-bottom: solid rgb(204, 202, 202) 1px;
     padding: 5px 10px 5px 10px;
     border-radius: 4px;
     font-weight: 800 !important; 
