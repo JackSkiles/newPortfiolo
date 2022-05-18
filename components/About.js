@@ -7,9 +7,10 @@ export default function About() {
   const [devProjects, setProjects] = useState(
     [
       {
-        src: "HeavyWeather.png",
-        name: "HeavyWeather",
+        src: "Heavy Weather.png",
+        name: "Heavy Weather",
         gif: "Img",
+        thumb: "heavyweatherthumb.png",
         text: "Change weather with music",
         github: "https://github.com/JackSkiles/weatherJams",
         link: "https://heavy-weather.herokuapp.com/",
@@ -20,6 +21,7 @@ export default function About() {
         src: "BThree.png",
         name: "BThree",
         gif: "Img",
+        thumb: "heavyweatherthumb.png",
         text: "Create account and use emergency button to send text to contacts",
         github: "https://github.com/JackSkiles/BThree",
         link: "https://bthree.herokuapp.com/",
@@ -30,7 +32,8 @@ export default function About() {
         src: "kanakeyboard.png",
         name: "kanakeyboard",
         gif: "Img",
-        text: "Change weather with music",
+        thumb: "heavyweatherthumb.png",
+        text: "Type text to be converted to Japanese Kana",
         github: "https://github.com/JackSkiles/japaneseKeyboard",
         link: "https://relaxed-booth-1bc501.netlify.app/",
         hide: "folder-content-hide",
@@ -40,7 +43,8 @@ export default function About() {
         src: "Tic.png",
         name: "Tic",
         gif: "Img",
-        text: "Change weather with music",
+        thumb: "heavyweatherthumb.png",
+        text: "Play a game of tic tac toe",
         github: "https://github.com/JackSkiles/ticTacToe",
         link: "https://heavy-weather.herokuapp.com/",
         hide: "folder-content-hide",
@@ -50,7 +54,8 @@ export default function About() {
         src: "Sceneit.png",
         name: "Sceneit",
         gif: "Img",
-        text: "Change weather with music",
+        thumb: "heavyweatherthumb.png",
+        text: "Search movies and add them to your favorites",
         github: "https://github.com/JackSkiles/scene-it-starter",
         link: "https://affectionate-lumiere-0972d7.netlify.app/",
         hide: "folder-content-hide",
@@ -76,7 +81,6 @@ export default function About() {
     if (name.slice(length - 4, length) != "open") {
       let newArray = [...devProjects]
       newArray[e.target.id] = { ...newArray[e.target.id], hide: "folder-content" }
-      setProjects(newArray);
       console.log("hello");
       // Sets target projects source value to Gif to allow animation to run. Timer is set to length of Gif to set source back to image.
       e.target.src = "Gif.gif";
@@ -84,10 +88,10 @@ export default function About() {
         e.target.src = `${name}open.png`;
         e.target.name = `${name}open`;
         console.log(name)
-        setOpen(`folder-content`);
+        setProjects(newArray);
         // e.target.name = "open";
         // setOpen("folder14.png");
-      }, 270);
+      }, 230);
       // sets className to change img sizing when folder is open
       e.target.className = "projectGif"
     }
@@ -95,6 +99,7 @@ export default function About() {
     else if (name.slice(length - 4, length) == "open") {
       // gets the index of current element.
       let newArray = [...devProjects]
+      // Changes hide value to hidden in project, to hide folder contents when closed.
       newArray[e.target.id] = { ...newArray[e.target.id], hide: "folder-content-hide" }
       setProjects(newArray);
 
@@ -134,11 +139,16 @@ export default function About() {
                   <div className="project">
                     {/* Gives img tag values related to the project, or item, being mapped over */}
                     <img src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif" id={item.id}></img>
-                    <div className={item.hide} name={item.id}>
-                      <h2 className="folder-header">{item.name}</h2>
-                      <p className="folder-text">{item.text}</p>
-                      <a href={item.github} className="folder-link" target="blank" >Demo</a>
-                      <a href={item.github} className="folder-link" target="blank">Github link</a>
+                    <div className={item.hide} name={item.id} id="folder-box">
+                      <div className="inner-folder-left">
+                        <img className="thumbnail" src={item.thumb}></img>
+                      </div>
+                      <div className="inner-folder">
+                        <h2 className="folder-header">{item.name}</h2>
+                        <p className="folder-text">{item.text}</p>
+                        <a href={item.github} className="folder-link" target="blank" >Demo</a>
+                        <a href={item.github} className="folder-link" target="blank">Github link</a>
+                      </div>
                     </div>
                   </div>
                 )
