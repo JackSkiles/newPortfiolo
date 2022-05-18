@@ -146,8 +146,10 @@ export default function About() {
                       <div className="inner-folder">
                         <h2 className="folder-header">{item.name}</h2>
                         <p className="folder-text">{item.text}</p>
-                        <a href={item.github} className="folder-link" target="blank" >Demo</a>
-                        <a href={item.github} className="folder-link" target="blank">Github link</a>
+                        <div className="text-box">
+                          <a href={item.github} className="folder-link" target="blank" >Demo</a>
+                          <a href={item.github} className="folder-link" target="blank">Github link</a>
+                        </div>
                       </div>
                     </div>
                   </div>
