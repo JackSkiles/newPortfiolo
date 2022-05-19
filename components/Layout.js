@@ -1,7 +1,8 @@
 import TopBar from "./TopBar";
 import Header from "./Header"
 import Hero from "./Hero"
-import About from "./About"
+import Projects from "./Projects"
+import Info from "./Info"
 
 const Layout = ({children}) => {
     return ( 
@@ -9,7 +10,8 @@ const Layout = ({children}) => {
             <TopBar />
             <Header />
             <Hero />
-            <About />
+            <Projects />
+            <Info />
                 {children}
         </div>
      );

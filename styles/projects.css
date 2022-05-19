@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&display=swap');
-.about-main
+.projects-main
 {
     /* background-color: #021D32; */
-    
+
 }
 
 .about-column
@@ -34,10 +34,15 @@
 
 .outerProjectsBox
 {
-    margin-top: 300px;
+    margin: 300px 0px 0px 0px;
     display: flex;
     /* align-items: center; */
     justify-content: center;
+}
+
+#box2
+{
+    padding-bottom: 100px;
 }
 
 .ProjectsBox

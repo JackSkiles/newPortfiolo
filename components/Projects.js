@@ -117,7 +117,7 @@ export default function About() {
     }
   }
   return (
-    <div className="about-main" style={{ backgroundImage: "url(/background.png)" }}>
+    <div className="projects-main" style={{ backgroundImage: "url(/background.png)" }}>
       <div className="about-column">
         <div className="about-box">
           <p className="about-text">
@@ -125,7 +125,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="outerProjectsBox">
+      <div className="outerProjectsBox" >
         <div className="ProjectsBox">
           <div className="projectHeaderBox">
             <div className='icon-div1-front'></div>
@@ -177,7 +177,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="outerProjectsBox">
+      <div className="outerProjectsBox" id="box2">
         <div className="ProjectsBox">
           <div className="projectHeaderBox">
             <div className='icon-div1-front'></div>
