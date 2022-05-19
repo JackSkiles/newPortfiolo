@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&display=swap');
 
 .outerInfoBox
 {
@@ -22,11 +23,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #021D32;
     border-radius: 4px 4px 0px 0px;
     width: 35%;
     border: solid rgb(150, 150, 150) 1px;
+}
 
+
+.infoHeader
+{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1vw;
+    letter-spacing: 1px;
 }
 
 .icon-container
@@ -37,11 +48,14 @@
 
 .icon2
 {
-    width: 100px;
+    width: 125px;
+    text-align: center;
 }
 
 .icon2 > i
 {
-    font-size: 50px;
+    text-align: center;
+    color: #1c2936;
+    font-size: 60px;
     width: 100%;
 }
