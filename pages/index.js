@@ -8,6 +8,8 @@ export default function Home() {
       <Head>
         <title>Jack Skiles | Home</title>
         <meta name="keywords" content="jack" />
+        <link rel="stylesheet"
+        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"></link>
       </Head>
 
       <footer className={styles.footer}>
