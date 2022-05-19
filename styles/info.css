@@ -1,7 +1,7 @@
 
 .outerInfoBox
 {
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     /* align-items: center; */
     justify-content: center;
@@ -27,4 +27,21 @@
     width: 35%;
     border: solid rgb(150, 150, 150) 1px;
 
+}
+
+.icon-container
+{
+    margin: 50px 0px 0px 0px; 
+    display: flex;
+}
+
+.icon2
+{
+    width: 100px;
+}
+
+.icon2 > i
+{
+    font-size: 50px;
+    width: 100%;
 }
