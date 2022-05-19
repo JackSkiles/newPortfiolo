@@ -42,6 +42,21 @@ export default function Info() {
                             <i class="devicon-bootstrap-plain" title="Bootstrap" id="skill"></i>
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
+
+                    </div>
+                    <div className="icon-container">
+                        <div class="icon2">
+                            <i class="devicon-photoshop-plain" title="Adobe Photoshop" id="skill"></i>
+                            {/* <p id="iconText">Bootstrap</p> */}
+                        </div>
+                        <div class="icon2">
+                            <i class="devicon-illustrator-plain" title="Adobe Illustrator" id="skill"></i>
+                            {/* <p id="iconText">Bootstrap</p> */}
+                        </div>
+                        <div class="icon2">
+                            <i class="devicon-premierepro-plain" title="Adobe Illustrator" id="skill"></i>
+                            {/* <p id="iconText">Bootstrap</p> */}
+                        </div>
                     </div>
                 </div>
             </div>
