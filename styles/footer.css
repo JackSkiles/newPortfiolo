@@ -2,5 +2,11 @@
 {
     display: flex;
     justify-content: space-between;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 50px 0px 50px;
+}
+
+.footerHeader
+{
+    border-bottom: solid black 2px;
+    width: 90%;
 }

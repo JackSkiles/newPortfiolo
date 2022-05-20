@@ -5,9 +5,11 @@ export default function footer() {
     <div>
         <div className="footerMain">
             <div className="footerLeft">
-                <h2 className="FooterHeader">
+                <h2 className="footerHeader">
                     Contact
                 </h2>
+                <a href="+14236195332">(423) 619-5332</a>
+                <a href="jackskiles71@gmail.com">jackskiles71@gmail.com</a>
             </div>
             <div className="footerCenter">
             </div>

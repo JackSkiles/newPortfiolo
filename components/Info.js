@@ -34,35 +34,35 @@ export default function Info() {
                             <i className="devicon-html5-plain" title="HTML5" id="skill"></i>
                             {/* <p id="iconText">HTML5</p> */}
                         </div>
-                        <div class="icon2">
-                            <i class="devicon-git-plain" title="Git" id="skill"></i>
+                        <div className="icon2">
+                            <i className="devicon-git-plain" title="Git" id="skill"></i>
                             {/* <p id="iconText">Git</p> */}
                         </div>
-                        <div class="icon2">
-                            <i class="devicon-bootstrap-plain" title="Bootstrap" id="skill"></i>
+                        <div className="icon2">
+                            <i className="devicon-bootstrap-plain" title="Bootstrap" id="skill"></i>
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
 
                     </div>
                     <div className="icon-container">
-                        <div class="icon2">
-                            <i class="devicon-photoshop-plain" title="Adobe Photoshop" id="skill"></i>
+                        <div className="icon2">
+                            <i className="devicon-photoshop-plain" title="Adobe Photoshop" id="skill"></i>
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
-                        <div class="icon2">
-                            <i class="devicon-xd-plain" title="Adobe XD" id="skill"></i>
+                        <div className="icon2">
+                            <i className="devicon-xd-plain" title="Adobe XD" id="skill"></i>
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
-                        <div class="icon2">
-                            <i class="devicon-premierepro-plain" title="Adobe Premiere Pro" id="skill"></i>
+                        <div className="icon2">
+                            <i className="devicon-premierepro-plain" title="Adobe Premiere Pro" id="skill"></i>
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
-                        <div class="icon2">
-                            <i class="devicon-illustrator-plain" title="Adobe Illustrator" id="skill"></i>
+                        <div className="icon2">
+                            <i className="devicon-illustrator-plain" title="Adobe Illustrator" id="skill"></i>
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
-                        <div class="icon2">
-                            <i class="devicon-gimp-plain" title="GIMP" id="skill"></i>
+                        <div className="icon2">
+                            <i className="devicon-gimp-plain" title="GIMP" id="skill"></i>
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
                     </div>
