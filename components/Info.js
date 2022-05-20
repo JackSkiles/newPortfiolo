@@ -50,11 +50,11 @@ export default function Info() {
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
                         <div class="icon2">
-                            <i class="devicon-illustrator-plain" title="Adobe Illustrator" id="skill"></i>
+                            <i class="devicon-premierepro-plain" title="Adobe Premiere Pro" id="skill"></i>
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
                         <div class="icon2">
-                            <i class="devicon-premierepro-plain" title="Adobe Illustrator" id="skill"></i>
+                            <i class="devicon-illustrator-plain" title="Adobe Illustrator" id="skill"></i>
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
                     </div>
