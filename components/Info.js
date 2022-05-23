@@ -11,7 +11,7 @@ export default function Info() {
                     </div>
                     <div className="icon-container">
                         <div className="icon2">
-                            <i class="devicon-visualstudio-plain" title="Visual Studio Code" id="skill"></i>
+                            <i className="devicon-visualstudio-plain" title="Visual Studio Code" id="skill"></i>
                             {/* <p id="iconText">Visual Studios</p> */}
                         </div>
                         <div className="icon2">
@@ -23,11 +23,11 @@ export default function Info() {
                             {/* <p id="iconText">PostgreSQL</p> */}
                         </div>
                         <div className="icon2">
-                            <i class="devicon-sequelize-plain" title="Sequelize" id="skill"></i>
+                            <i className="devicon-sequelize-plain" title="Sequelize" id="skill"></i>
                             {/* <p id="iconText">Sequelize</p> */}
                         </div>
                         <div className="icon2">
-                            <i class="devicon-nodejs-plain" title="Nodejs" id="skill"></i>
+                            <i className="devicon-nodejs-plain" title="Nodejs" id="skill"></i>
                             {/* <p id="iconText">Node.js</p> */}
                         </div>
                         <div className="icon2">

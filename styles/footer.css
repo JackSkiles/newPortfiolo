@@ -5,8 +5,22 @@
     margin: 0px 50px 0px 50px;
 }
 
+.footerLeft 
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    height: 200px;
+}
+
 .footerHeader
 {
     border-bottom: solid black 2px;
     width: 90%;
+}
+
+.footerLink
+{
+    display: none;
+    padding: 200px;
 }
