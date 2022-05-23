@@ -163,3 +163,54 @@
     margin: 200px 0px 200px 0px;
     background-color: white;
 }
+
+@media screen and (max-width: 1000px) {
+    /* #listDiv
+    {
+        position: relative;
+        width: 40%;
+        height: 10%;
+        left: 15% !important;
+    }
+    .hero-inner
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 100%;
+    }
+    .hero-left
+    {
+        position: relative;
+        width: 100%;
+        height: 45%;
+    }
+    .hero-right
+    {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        right: 0%;
+        height: 55%;
+        top: 0%;
+
+    }
+    .hero-img-div
+    {
+        margin: 0px 0px 10% 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: initial;
+        width: 100%;
+
+    }
+    .portrait
+    {
+        width: 40%;
+    }
+    .list-div1-front, .list-div2-front, .list-div3-front
+    {
+        
+    } */
+}
