@@ -79,6 +79,30 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
+                <div className='hero-inner-mobile' >
+                    <div className='hero-left-mobile'>
+                        <div className={`list-div${list1}`} id="listDivMobile">
+                            <div className={`icon-div${list1}`}></div>
+                            {/* <img src="Rectangle 17.png" className="squareIcon"></img> */}
+                            <h2 className={`list-header${list1}`}>SOFTWARE ENGINEER</h2>
+                        </div>
+                        <div className={`list-div${list2}`} id="listDivMobile">
+                            <div className={`icon-div${list2}`}></div>
+                            <h2 className={`list-header${list2}`}>GRAPHIC DESIGNER</h2>
+                        </div>
+                        <div className={`list-div${list3}`} id="listDivMobile">
+                            <div className={`icon-div${list3}`}></div>
+                            <h2 className={`list-header${list3}`}>WEB DEVELOPER</h2>
+                        </div>
+                    </div>
+                    <div className='hero-right-mobile'>
+                        <div className='hero-img-div' onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave} >
+                            <img src={portrait} className={classN} />
+                            {/* <button>Hello</button> */}
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className='seperatorDiv'>
             </div>

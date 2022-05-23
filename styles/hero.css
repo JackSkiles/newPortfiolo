@@ -23,6 +23,10 @@
     z-index: 3;
 }
 
+.hero-inner-mobile {
+    display: none;
+}
+
 #listDiv {
     margin: 10px 0px 10px 0px;
 }
@@ -61,7 +65,7 @@
     left: 34%;
     /* width: 40%; */
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     background-color: #021D32;
     padding: 0px 30px 0px 30px;
@@ -158,13 +162,100 @@
 
 }
 
-.seperatorDiv
-{
+.seperatorDiv {
     margin: 200px 0px 200px 0px;
     background-color: white;
 }
 
 @media screen and (max-width: 1000px) {
+
+    .hero-inner {
+        display: none;
+    }
+
+    .hero-inner-mobile {
+        height: 40vh
+    }
+
+    .hero-right-mobile {
+        background-color: #0993F6;
+        height: 50%;
+    }
+
+    .hero-left-mobile {
+        height: 50%;
+    }
+
+    .hero-inner-mobile, .hero-right-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-img-div {
+        display: flex;
+        justify-content: center;
+        top: auto;
+        width: 100%;
+        left: 0%;
+    }
+
+    .portrait {
+        width: 40%;
+    }
+
+    #listDivMobile {
+        position: relative;
+    }
+
+    .list-div1, .list-div2, .list-div3 {
+        position: absolute;
+        top: 35%;
+        left: 29%;
+        /* width: 40%; */
+        display: flex;
+        justify-content: center;
+        padding: 0px 30px 0px 30px;
+        align-items: center;
+        transition: 1s;
+        z-index: 0;
+
+    }
+
+    .list-div1-bottom, .list-div2-bottom, .list-div3-bottom {
+        position: absolute;
+        top: 70%;
+        left: 29%;
+        /* width: 40%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 30px 0px 30px;
+        transition: 1s;
+        z-index: 0;
+
+    }
+
+    .list-div1-front, .list-div2-front, .list-div3-front {
+        position: absolute;
+        top: 52%;
+        left: 34%;
+        /* width: 40%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #021D32;
+        padding: 0px 30px 0px 30px;
+        border-radius: 8px;
+        box-shadow: -1px 10px 20px 5px rgb(197, 197, 197);
+        transition: 1s;
+        z-index: 1;
+
+
+    }
+
+
     /* #listDiv
     {
         position: relative;
