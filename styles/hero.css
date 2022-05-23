@@ -186,7 +186,7 @@
     }
 
     .hero-left-mobile {
-        height: 100%;
+        height: 50%;
         display: flex;
         flex-direction: column;
     }
@@ -217,12 +217,8 @@
         width: 40%;
     }
 
-    #listDivMobile {
-        position: relative;
-    }
-
     .list-div1, .list-div2, .list-div3 {
-        position: absolute;
+        position: relative;
         top: 0%;
         left: auto;
         /* width: 40%; */
@@ -237,7 +233,7 @@
 
     .list-div1-bottom, .list-div2-bottom, .list-div3-bottom {
         position: absolute;
-        top: 0%;
+        top: 52%;
         left: auto;
         /* width: 40%; */
         display: flex;
@@ -251,7 +247,7 @@
 
     .list-div1-front, .list-div2-front, .list-div3-front {
         position: absolute;
-        top: 0%;
+        top: 43%;
         left: auto;
         /* width: 40%; */
         display: flex;
