@@ -8,7 +8,7 @@ export default function Hero() {
     const [list1, setList1] = useState("1");
     const [list2, setList2] = useState("2-front");
     const [list3, setList3] = useState("3-bottom");
-    
+
     const [classN, setClass] = useState("portrait");
 
     // useEffect to change list positions
@@ -31,8 +31,7 @@ export default function Hero() {
                 setList2("2-front");
                 setList3("3-bottom");
             }
-            else
-            {
+            else {
                 console.log("issue")
             }
             // console.log('This will run every second!');
@@ -81,18 +80,21 @@ export default function Hero() {
                 </div>
                 <div className='hero-inner-mobile' >
                     <div className='hero-left-mobile'>
-                        <div className={`list-div${list1}`} id="listDivMobile">
-                            <div className={`icon-div${list1}`}></div>
-                            {/* <img src="Rectangle 17.png" className="squareIcon"></img> */}
-                            <h2 className={`list-header${list1}`}>SOFTWARE ENGINEER</h2>
-                        </div>
-                        <div className={`list-div${list2}`} id="listDivMobile">
-                            <div className={`icon-div${list2}`}></div>
-                            <h2 className={`list-header${list2}`}>GRAPHIC DESIGNER</h2>
-                        </div>
-                        <div className={`list-div${list3}`} id="listDivMobile">
-                            <div className={`icon-div${list3}`}></div>
-                            <h2 className={`list-header${list3}`}>WEB DEVELOPER</h2>
+                        <div className='div-box-mobile'>
+                            <div className={`list-div${list1}`} id="listDivMobile">
+                                <div className={`icon-div${list1}`} id="iconDivMobile"></div>
+                                {/* <img src="Rectangle 17.png" className="squareIcon"></img> */}
+                                <h2 className={`list-header${list1}`} id="listHeaderMobile">SOFTWARE ENGINEER</h2>
+                            </div>
+                            <div className={`list-div${list2}`} id="listDivMobile">
+                                <div className={`icon-div${list2}`} id="iconDivMobile"></div>
+                                <h2 className={`list-header${list2}`} id="listHeaderMobile">GRAPHIC DESIGNER</h2>
+                            </div>
+                            <div className={`list-div${list3}`} id="listDivMobile">
+                                <div className={`icon-div${list3}`} id="iconDivMobile"></div>
+                                <h2 className={`list-header${list3}`} id="listHeaderMobile">WEB DEVELOPER</h2>
+                            </div>
+
                         </div>
                     </div>
                     <div className='hero-right-mobile'>

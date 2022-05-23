@@ -186,7 +186,7 @@
     }
 
     .hero-left-mobile {
-        height: 50%;
+        height: 70%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -219,32 +219,65 @@
         width: 40%;
     }
 
+    .div-box-mobile
+    {
+        position: relative;
+        top: 0%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: space-between;
+        height: 100%;
+        width: 45vw;
+        margin: 20px 0px 0px 0px;
+    }
+
+    #iconDivMobile
+    {
+        width: 10px;
+        height: 10px;
+        border-radius: 2px;
+    }
+
     .list-div1, .list-div2, .list-div3 {
         /* position: initial; */
         top: 0%;
         left: auto; 
-        padding: 10px 30px 10px 30px;
+        padding: 12px 0px 15px 30px;
   
 
     }
 
     .list-div1-bottom, .list-div2-bottom, .list-div3-bottom {
         /* position: absolute; */
-        top: 52%;
-        left: auto;
-        padding: 10px 30px 10px 30px;
-    
+        top: 60%;
+        left: initial;
+        padding: 15px 0px 0px 30px;
+        /* margin: 10px 0px 0px 0px; */
 
+    }
+
+    #listDivMobile
+    {
+        width: 100%;
+        justify-content: flex-start;
+        transition: .5s;
     }
 
     .list-div1-front, .list-div2-front, .list-div3-front {
         /* position: absolute; */
-        top: 43%;
-        left: auto;
-        padding: 10px 30px 10px 30px;
+        top: 30%;
+        left: -10%;
+        padding: 10px 0px 10px 30px;
+        margin: 0px 0px 0px 0px;
         z-index: 0;
 
 
+    }
+
+    #listHeaderMobile
+    {
+        font-size: 10px;
+        margin-bottom: 4px;
     }
 
 
