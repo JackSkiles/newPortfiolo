@@ -168,13 +168,16 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .seperatorDiv
+    {
+        margin: 50px 0px 50px 0px; 
+    }
+    .hero-Main {
+        height: 40vh;
+    }
 
     .hero-inner {
         display: none;
-    }
-
-    .hero-inner-mobile {
-        height: 40vh
     }
 
     .hero-right-mobile {
@@ -183,7 +186,9 @@
     }
 
     .hero-left-mobile {
-        height: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .hero-inner-mobile, .hero-right-mobile {
@@ -191,6 +196,13 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+
+    .hero-inner-mobile {
+        height: 100%;
+        align-items: space-around;
+        justify-content: space-around;
+
     }
 
     .hero-img-div {
@@ -211,12 +223,12 @@
 
     .list-div1, .list-div2, .list-div3 {
         position: absolute;
-        top: 35%;
-        left: 29%;
+        top: 0%;
+        left: auto;
         /* width: 40%; */
         display: flex;
         justify-content: center;
-        padding: 0px 30px 0px 30px;
+        padding: 10px 30px 10px 30px;
         align-items: center;
         transition: 1s;
         z-index: 0;
@@ -225,13 +237,13 @@
 
     .list-div1-bottom, .list-div2-bottom, .list-div3-bottom {
         position: absolute;
-        top: 70%;
-        left: 29%;
+        top: 0%;
+        left: auto;
         /* width: 40%; */
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0px 30px 0px 30px;
+        padding: 10px 30px 10px 30px;
         transition: 1s;
         z-index: 0;
 
@@ -239,18 +251,18 @@
 
     .list-div1-front, .list-div2-front, .list-div3-front {
         position: absolute;
-        top: 52%;
-        left: 34%;
+        top: 0%;
+        left: auto;
         /* width: 40%; */
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #021D32;
-        padding: 0px 30px 0px 30px;
+        padding: 10px 30px 10px 30px;
         border-radius: 8px;
         box-shadow: -1px 10px 20px 5px rgb(197, 197, 197);
         transition: 1s;
-        z-index: 1;
+        z-index: 0;
 
 
     }
