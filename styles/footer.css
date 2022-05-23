@@ -1,26 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand&display=swap');
+
+
 .footerMain
 {
     display: flex;
     justify-content: space-between;
-    margin: 0px 50px 0px 50px;
+    padding: 0px 50px 0px 50px;
+    background-color: #09283f;
 }
 
-.footerLeft 
+.footerLeft, .footerCenter, .footerRight
 {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
+    justify-content: center;
     height: 200px;
 }
 
+
+
 .footerHeader
 {
-    border-bottom: solid black 2px;
+    border-bottom: solid white 2px;
+    margin: 0px;
     width: 90%;
+    color: white;
 }
 
 .footerLink
 {
-    display: none;
-    padding: 200px;
+    /* display: none; */
+    margin: 20px 0px 0px 0px;
+    color: white;
+}
+
+.footerIcon
+{
+    height: 20px;
+    width: 20px;
+}
+
+
+.designedBy
+{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 25px;
 }
