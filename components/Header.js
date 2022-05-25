@@ -12,13 +12,11 @@ export default function Header(props) {
         // console.log(mobileMenuButton)
 
         // if mobile menu is hidden, this will remove that text to set it to shown
-        if(hide === "Hide")
-        {
+        if (hide === "Hide") {
             setHide("");
         }
         // else if mobile menu is showing, this will add text Hide to set it to hidden.
-        else if(hide === "")
-        {
+        else if (hide === "") {
             setHide("Hide");
         }
     }
@@ -47,28 +45,29 @@ export default function Header(props) {
             </div>
             <div className={`mobileMenuButton${hide}`} >
                 <button onClick={onClick}>
-                    <div className={`mobileX${hide}Left`}/>
-                    <div className={`mobileX${hide}Center`}/>
-                    <div className={`mobileX${hide}Right`}/>
+                    <div className={`mobileX${hide}Left`} />
+                    <div className={`mobileX${hide}Center`} />
+                    <div className={`mobileX${hide}Right`} />
                 </button>
             </div>
             <div className={`headerRightMobile${hide}`}>
-            
-                <div className={styles.menuGroup2} id="top-div">
-                    <img src="Rectangle 17.png" className={styles.squareIcon}></img>
-                    <a href="" className={styles.menuItem}>Development Projects</a>
-                </div>
-                <div className={styles.menuGroup2}>
-                    <img src="Rectangle 17.png" className={styles.squareIcon}></img>
-                    <a href="" className={styles.menuItem}>Graphic Design Projects</a>
-                </div>
-                <div className={styles.menuGroup2}>
-                    <img src="Rectangle 17.png" className={styles.squareIcon}></img>
-                    <a href="" className={styles.menuItem}>Other Projects</a>
-                </div>
-                <div className={styles.menuGroup2}>
-                    <img src="Rectangle 17.png" className={styles.squareIcon}></img>
-                    <a href="" className={styles.menuItem}>About Me</a>
+                <div className="outerHeaderRightMobile">
+                    <div className={styles.menuGroup2} id="top-div">
+                        <img src="Rectangle 17.png" className={styles.squareIcon}></img>
+                        <a href="" className={styles.menuItem}>Development Projects</a>
+                    </div>
+                    <div className={styles.menuGroup2}>
+                        <img src="Rectangle 17.png" className={styles.squareIcon}></img>
+                        <a href="" className={styles.menuItem}>Graphic Design Projects</a>
+                    </div>
+                    <div className={styles.menuGroup2}>
+                        <img src="Rectangle 17.png" className={styles.squareIcon}></img>
+                        <a href="" className={styles.menuItem}>Other Projects</a>
+                    </div>
+                    <div className={styles.menuGroup2}>
+                        <img src="Rectangle 17.png" className={styles.squareIcon}></img>
+                        <a href="" className={styles.menuItem}>About Me</a>
+                    </div>
                 </div>
             </div>
         </div>

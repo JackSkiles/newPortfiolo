@@ -80,6 +80,8 @@
     font-size: 14px;
 }
 
+
+
 .headerRightMobile {
     display: none;
     position: fixed;
@@ -140,6 +142,17 @@
 }
 
 @media screen and (max-width: 1000px) {
+
+    .headerLeft
+    {
+        padding: 0px 0px 0px 10px;
+    }
+    
+    .container
+    {
+        justify-content: space-between;
+    }
+
     .title
     {
         font-size: 20px;
