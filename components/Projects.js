@@ -128,7 +128,7 @@ export default function About() {
       <div className="outerProjectsBox" >
         <div className="ProjectsBox">
           <div className="projectHeaderBox">
-            <div className='icon-div1-front'></div>
+            <div className='projectsIcon'></div>
             <h3 className="projectHeader">Development Projects</h3>
           </div>
           <div className="projectsMain">
@@ -180,7 +180,7 @@ export default function About() {
       <div className="outerProjectsBox" id="box2">
         <div className="ProjectsBox">
           <div className="projectHeaderBox">
-            <div className='icon-div1-front'></div>
+            <div className='projectsIcon'></div>
             <h3 className="projectHeader">Design Projects</h3>
           </div>
           <div className="projectsMain">
