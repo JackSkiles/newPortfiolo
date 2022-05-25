@@ -220,8 +220,19 @@
         box-shadow: 0px 5px 0px 3px #FFD88B;
     }
 
+    .projectHeaderBox
+    {
+        width: 50%;
+        height: 30px;
+    }
+
+    .projectHeader
+    {
+        font-size: 10px;
+    }
     .projectsIcon {
         width: 15px;
         height: 15px;
+        margin-right: 10px;
     }
 }
