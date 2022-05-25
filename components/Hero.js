@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 export default function Hero() {
     // state to set right header img src
     const [portrait, setImg] = useState("Mask Group 4.png");
+    const [mobilePortrait, setMobile] = useState("profilepic.png");
     // states to let list item position in rotation. blank indicates top, front indicates center, and bottom indicates bottom
     const [list1, setList1] = useState("1");
     const [list2, setList2] = useState("2-front");
@@ -48,6 +49,17 @@ export default function Hero() {
     const handleMouseLeave = () => {
         setImg("Mask Group 4.png");
         // setClass("portrait");
+    }
+
+    const onClick = () => {
+        if(mobilePortrait == "profilepic.png")
+        {
+            setMobile("Mask Group 4.png");
+        }
+        else
+        {
+            setMobile("profilepic.png");
+        }
     }
 
 
@@ -98,9 +110,8 @@ export default function Hero() {
                         </div>
                     </div>
                     <div className='hero-right-mobile'>
-                        <div className='hero-img-div' onMouseEnter={handleMouseEnter}
-                            onMouseLeave={handleMouseLeave} >
-                            <img src={portrait} className={classN} />
+                        <div className='hero-img-div' onClick={onClick} >
+                            <img src={mobilePortrait} className={classN} />
                             {/* <button>Hello</button> */}
                         </div>
                     </div>
