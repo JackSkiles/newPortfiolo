@@ -215,9 +215,44 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .about-box {
+    .about-box 
+    {
         width: 75%;
         box-shadow: 0px 5px 0px 3px #FFD88B;
+    }
+
+
+
+    .thumbnail {
+        height: 190px;
+        max-height: 100%;
+        width: 80%;
+    }
+
+    .inner-folder-left {
+        position: absolute;
+        top: 2%;
+        left: -93%;
+        height: 100%;
+    }
+
+    .inner-folder
+    {
+        top: 0%;
+    }
+
+    .folder-header{
+        font-size: 15px;
+    }
+
+    .folder-text
+    {
+        font-size: 12px;
+    }
+
+    .projectGif
+    {
+        width: 280px;
     }
 
     .projectHeaderBox
