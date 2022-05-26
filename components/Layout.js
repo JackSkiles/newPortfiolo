@@ -3,7 +3,7 @@ import Header from "./Header";
 import Hero from "./Hero";
 import Projects from "./Projects";
 import Info from "./Info";
-import Footer from "./Footer";
+import Footer2 from "./Footer2";
 
 const Layout = ({children}) => {
     return ( 
@@ -13,7 +13,7 @@ const Layout = ({children}) => {
             <Hero />
             <Projects />
             <Info />
-            <Footer />
+            <Footer2 />
                 {children}
         </div>
      );
