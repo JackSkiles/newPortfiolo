@@ -121,7 +121,7 @@ export default function About() {
       <div className="about-column">
         <div className="about-box">
           <p className="about-text">
-            I'm a software engineer and designer from Chattanooga, TN. I have been working on websites, software and graphic design over the past 3 years. Since then I have learned many new technologies, languages and techniques to further the craft. I had a lot of fun making this site and the projects presented, so I hope you enjoy!
+            I am a software engineer and designer from Chattanooga, TN. I have been working on websites, software and graphic design over the past 3 years. Since then I have learned many new technologies, languages and techniques to further the craft. I had a lot of fun making this site and the projects presented, so I hope you enjoy!
           </p>
         </div>
       </div>
@@ -136,7 +136,7 @@ export default function About() {
               {/* maps through devProjects state to list out each project with data intact */}
               {devProjects.map((item) => {
                 return (
-                  <div className="project">
+                  <div className="project" key="1">
                     {/* Gives img tag values related to the project, or item, being mapped over */}
                     <img src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif" id={item.id}></img>
                     <div className={item.hide} name={item.id} id="folder-box">
@@ -188,7 +188,7 @@ export default function About() {
               {/* maps through devProjects state to list out each project with data intact */}
               {devProjects.map((item) => {
                 return (
-                  <div className="project">
+                  <div className="project" key="2">
                     {/* Gives img tag values related to the project, or item, being mapped over */}
                     <img src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif" id={item.id}></img>
                     <div className={item.hide} name={item.id} id="folder-box">
