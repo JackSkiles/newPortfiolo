@@ -236,18 +236,34 @@
         height: 100%;
     }
 
+
     .inner-folder
     {
         top: 0%;
+        justify-content: flex-start;
+        margin: 10px 0px 0px 0px;
+        height: 60%;
+
+    }
+
+    .folder-content
+    {
+        align-items: flex-start;
+        height: 200px;
+    }
+
+    .folder-link
+    {
+        font-size: 10px;
     }
 
     .folder-header{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .folder-text
     {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .projectGif
