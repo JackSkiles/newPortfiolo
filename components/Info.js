@@ -6,7 +6,7 @@ export default function Info() {
             <div className="outerInfoBox">
                 <div className="infoBox">
                     <div className="infoHeaderBox">
-                        <div className='icon-div1-front'></div>
+                        <div className='projectsIcon'></div>
                         <h3 className="infoHeader">Skills and Technologies</h3>
                     </div>
                     <div className="icon-container">
