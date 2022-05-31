@@ -83,7 +83,7 @@ export default function About() {
       newArray[e.target.id] = { ...newArray[e.target.id], hide: "folder-content" }
       console.log("hello");
       // Sets target projects source value to Gif to allow animation to run. Timer is set to length of Gif to set source back to image.
-      e.target.src = "FolderGif6fast.gif";
+      e.target.src = "FolderGif7.gif";
       setTimeout(function () {
         e.target.src = `${name}open.png`;
         e.target.name = `${name}open`;
@@ -91,7 +91,7 @@ export default function About() {
         setProjects(newArray);
         // e.target.name = "open";
         // setOpen("folder14.png");
-      }, 480);
+      }, 450);
       // sets className to change img sizing when folder is open
       e.target.className = "projectGif"
     }
