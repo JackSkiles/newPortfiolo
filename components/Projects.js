@@ -40,8 +40,8 @@ export default function About() {
         id: 2
       },
       {
-        src: "Tic.png",
-        name: "Tic",
+        src: "Tic-Tac-Toe.png",
+        name: "Tic-Tac-Toe",
         gif: "Img",
         thumb: "heavyweatherthumb.png",
         text: "Play a game of tic tac toe",
@@ -51,8 +51,8 @@ export default function About() {
         id: 3
       },
       {
-        src: "Sceneit.png",
-        name: "Sceneit",
+        src: "Scene-it.png",
+        name: "Scene-it",
         gif: "Img",
         thumb: "heavyweatherthumb.png",
         text: "Search movies and add them to your favorites",
