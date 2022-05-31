@@ -19,6 +19,10 @@ export default function Info() {
                             {/* <p id="iconText">JavaScript</p> */}
                         </div>
                         <div className="icon2">
+                            <i className="devicon-react-plain" title="React" id="skill"></i>
+                            {/* <p id="iconText">JavaScript</p> */}
+                        </div>
+                        <div className="icon2">
                             <i className="devicon-postgresql-plain" title="PostgreSQL" id="skill"></i>
                             {/* <p id="iconText">PostgreSQL</p> */}
                         </div>
@@ -26,6 +30,8 @@ export default function Info() {
                             <i className="devicon-sequelize-plain" title="Sequelize" id="skill"></i>
                             {/* <p id="iconText">Sequelize</p> */}
                         </div>
+                    </div>
+                    <div className="icon-container">
                         <div className="icon2">
                             <i className="devicon-nodejs-plain" title="Nodejs" id="skill"></i>
                             {/* <p id="iconText">Node.js</p> */}
@@ -42,7 +48,6 @@ export default function Info() {
                             <i className="devicon-bootstrap-plain" title="Bootstrap" id="skill"></i>
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
-
                     </div>
                     <div className="icon-container">
                         <div className="icon2">
