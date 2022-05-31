@@ -144,7 +144,7 @@ export default function About() {
                         <img className="thumbnail" src={item.thumb}></img>
                       </div>
                       <div className="inner-folder">
-                        <h2 className="folder-header">{item.name}</h2>
+                        <h3 className="folder-header">{item.name}</h3>
                         <p className="folder-text">{item.text}</p>
                         <div className="text-box">
                           <a href={item.link} className="folder-link" target="blank" >Demo</a>
