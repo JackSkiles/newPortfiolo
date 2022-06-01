@@ -41,6 +41,10 @@ export default function Info() {
                             {/* <p id="iconText">HTML5</p> */}
                         </div>
                         <div className="icon2">
+                            <i className="devicon-css3-plain" title="CSS" id="skill"></i>
+                            {/* <p id="iconText">Sequelize</p> */}
+                        </div>
+                        <div className="icon2">
                             <i className="devicon-git-plain" title="Git" id="skill"></i>
                             {/* <p id="iconText">Git</p> */}
                         </div>
