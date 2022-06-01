@@ -65,10 +65,10 @@ export default function About() {
         src: "Kuro Coffee.png",
         name: "Kuro Coffee",
         gif: "Img",
-        thumb: "sceneitthumb.png",
+        thumb: "kurothumb.png",
         text: "Website I created for my coffee brewing startup.",
-        github: "https://github.com/JackSkiles/scene-it-starter",
-        link: "https://affectionate-lumiere-0972d7.netlify.app/",
+        github: "https://github.com/JackSkiles/kuro",
+        link: "https://kurocoffeebrewers.com/",
         hide: "folder-content-hide",
         id: 4
       }
