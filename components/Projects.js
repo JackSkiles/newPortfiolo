@@ -93,6 +93,17 @@ export default function About() {
         link: "https://www.youtube.com/watch?v=MEEnwg4MEWU",
         hide: "folder-content-hide",
         id: 6
+      },
+      {
+        src: "Snowboard.png",
+        name: "Snowboard",
+        gif: "Img",
+        thumb: "snowboardthumb.png",
+        text: "Physics based snowboard game built with Unity and C#",
+        github: "https://github.com/JackSkiles/snowboarder",
+        link: "https://youtu.be/mbXih7ta9U0",
+        hide: "folder-content-hide",
+        id: 7
       }
     ]
   )
