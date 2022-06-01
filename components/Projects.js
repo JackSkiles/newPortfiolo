@@ -71,6 +71,17 @@ export default function About() {
         link: "https://kurocoffeebrewers.com/",
         hide: "folder-content-hide",
         id: 4
+      },
+      {
+        src: "Pong.png",
+        name: "Pong",
+        gif: "Img",
+        thumb: "pongthumb.png",
+        text: "Simple pong game made in Python.",
+        github: "https://github.com/JackSkiles/pong",
+        link: "https://youtu.be/XUNmnWlVeR4",
+        hide: "folder-content-hide",
+        id: 5
       }
     ]
   )
