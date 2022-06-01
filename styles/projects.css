@@ -159,7 +159,7 @@
 .inner-folder-left {
     position: absolute;
     top: 10%;
-    left: -93%;
+    left: -91%;
     height: 85%;
 }
 
@@ -188,7 +188,10 @@
 }
 
 .thumbnail {
-    height: 500px;
+    height: 355px;
+    /* max-height: 280px; */
+    overflow: hidden;
+    object-fit: cover;
     width: 80%;
 }
 
