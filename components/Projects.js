@@ -104,6 +104,17 @@ export default function About() {
         link: "https://youtu.be/mbXih7ta9U0",
         hide: "folder-content-hide",
         id: 7
+      },
+      {
+        src: "Delivery Driver.png",
+        name: "Delivery Driver",
+        gif: "Img",
+        thumb: "deliverythumb.png",
+        text: "Pick up and deliver packages in this game built with Unity and C#",
+        github: "https://github.com/JackSkiles/DeliveryDriver",
+        link: "https://youtu.be/5ydWsND0wZ8",
+        hide: "folder-content-hide",
+        id: 8
       }
     ]
   )
