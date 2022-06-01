@@ -17,17 +17,17 @@ export default function About() {
         hide: "folder-content-hide",
         id: 0
       },
-      {
-        src: "BThree.png",
-        name: "BThree",
-        gif: "Img",
-        thumb: "heavyweatherthumb.png",
-        text: "Create account and use emergency button to send text to contacts",
-        github: "https://github.com/JackSkiles/BThree",
-        link: "https://bthree.herokuapp.com/",
-        hide: "folder-content-hide",
-        id: 1
-      },
+      // {
+      //   src: "BThree.png",
+      //   name: "BThree",
+      //   gif: "Img",
+      //   thumb: "heavyweatherthumb.png",
+      //   text: "Create account and use emergency button to send text to contacts",
+      //   github: "https://github.com/JackSkiles/BThree",
+      //   link: "https://bthree.herokuapp.com/",
+      //   hide: "folder-content-hide",
+      //   id: 1
+      // },
       {
         src: "kana keyboard.png",
         name: "kana keyboard",
@@ -37,7 +37,7 @@ export default function About() {
         github: "https://github.com/JackSkiles/japaneseKeyboard",
         link: "https://relaxed-booth-1bc501.netlify.app/",
         hide: "folder-content-hide",
-        id: 2
+        id: 1
       },
       {
         src: "Tic-Tac-Toe.png",
@@ -48,7 +48,7 @@ export default function About() {
         github: "https://github.com/JackSkiles/ticTacToe",
         link: "https://heavy-weather.herokuapp.com/",
         hide: "folder-content-hide",
-        id: 3
+        id: 2
       },
       {
         src: "Scene-it.png",
@@ -59,7 +59,7 @@ export default function About() {
         github: "https://github.com/JackSkiles/scene-it-starter",
         link: "https://affectionate-lumiere-0972d7.netlify.app/",
         hide: "folder-content-hide",
-        id: 4
+        id: 3
       }
     ]
   )
