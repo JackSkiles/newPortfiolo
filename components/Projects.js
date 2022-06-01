@@ -82,6 +82,17 @@ export default function About() {
         link: "https://youtu.be/XUNmnWlVeR4",
         hide: "folder-content-hide",
         id: 5
+      },
+      {
+        src: "Building Escape.png",
+        name: "Building Escape",
+        gif: "Img",
+        thumb: "buildingthumb.png",
+        text: "Simple puzzle game made using Unreal Engine and C++.",
+        github: "https://github.com/JackSkiles/buildingEscape",
+        link: "https://www.youtube.com/watch?v=MEEnwg4MEWU",
+        hide: "folder-content-hide",
+        id: 6
       }
     ]
   )
