@@ -48,6 +48,10 @@ export default function Info() {
                             <i className="devicon-bootstrap-plain" title="Bootstrap" id="skill"></i>
                             {/* <p id="iconText">Bootstrap</p> */}
                         </div>
+                        <div className="icon2">
+                            <i className="devicon-wordpress-plain" title="WordPress" id="skill"></i>
+                            {/* <p id="iconText">Bootstrap</p> */}
+                        </div>
                     </div>
                     <div className="icon-container">
                         <div className="icon2">

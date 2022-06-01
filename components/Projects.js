@@ -60,6 +60,17 @@ export default function About() {
         link: "https://affectionate-lumiere-0972d7.netlify.app/",
         hide: "folder-content-hide",
         id: 3
+      },
+      {
+        src: "Kuro Coffee.png",
+        name: "Kuro Coffee",
+        gif: "Img",
+        thumb: "sceneitthumb.png",
+        text: "Website I created for my coffee brewing startup.",
+        github: "https://github.com/JackSkiles/scene-it-starter",
+        link: "https://affectionate-lumiere-0972d7.netlify.app/",
+        hide: "folder-content-hide",
+        id: 4
       }
     ]
   )
