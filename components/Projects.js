@@ -15,19 +15,10 @@ export default function About() {
         github: "https://github.com/JackSkiles/weatherJams",
         link: "https://heavy-weather.herokuapp.com/",
         hide: "folder-content-hide",
+        subAlt: "",
+        alt: "",
         id: 0
       },
-      // {
-      //   src: "BThree.png",
-      //   name: "BThree",
-      //   gif: "Img",
-      //   thumb: "heavyweatherthumb.png",
-      //   text: "Create account and use emergency button to send text to contacts",
-      //   github: "https://github.com/JackSkiles/BThree",
-      //   link: "https://bthree.herokuapp.com/",
-      //   hide: "folder-content-hide",
-      //   id: 1
-      // },
       {
         src: "kana keyboard.png",
         name: "kana keyboard",
@@ -37,6 +28,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/japaneseKeyboard",
         link: "https://relaxed-booth-1bc501.netlify.app/",
         hide: "folder-content-hide",
+        subAlt: "",
+        alt: "",
         id: 1
       },
       {
@@ -48,6 +41,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/ticTacToe",
         link: "https://github.com/JackSkiles/ticTacToe",
         hide: "folder-content-hide",
+        subAlt: "",
+        alt: "",
         id: 2
       },
       {
@@ -59,6 +54,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/scene-it-starter",
         link: "https://affectionate-lumiere-0972d7.netlify.app/",
         hide: "folder-content-hide",
+        subAlt: "",
+        alt: "",
         id: 3
       },
       {
@@ -70,6 +67,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/kuro",
         link: "https://kurocoffeebrewers.com/",
         hide: "folder-content-hide",
+        subAlt: "",
+        alt: "",
         id: 4
       },
       {
@@ -81,6 +80,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/pong",
         link: "https://youtu.be/XUNmnWlVeR4",
         hide: "folder-content-hide",
+        subAlt: "",
+        alt: "",
         id: 5
       },
       {
@@ -92,6 +93,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/buildingEscape",
         link: "https://www.youtube.com/watch?v=MEEnwg4MEWU",
         hide: "folder-content-hide",
+        subAlt: "",
+        alt: "",
         id: 6
       },
       {
@@ -103,6 +106,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/snowboarder",
         link: "https://youtu.be/mbXih7ta9U0",
         hide: "folder-content-hide",
+        alt: "",
+        subAlt: "",
         id: 7
       },
       {
@@ -114,6 +119,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/DeliveryDriver",
         link: "https://youtu.be/5ydWsND0wZ8",
         hide: "folder-content-hide",
+        subAlt: "",
+        alt: "",
         id: 8
       }
     ]
@@ -131,6 +138,8 @@ export default function About() {
         hide: "folder-content-hide",
         link1: "Behance",
         link2: "Website",
+        subAlt: "",
+        alt: "",
         id: 0
       },
       {
@@ -144,6 +153,8 @@ export default function About() {
         hide: "folder-content-hide",
         link1: "Behance",
         link2: "Website",
+        subAlt: "",
+        alt: "",
         id: 1
       },
       {
@@ -157,6 +168,8 @@ export default function About() {
         hide: "folder-content-hide",
         link1: "Adobe XD",
         link2: "Website",
+        subAlt: "",
+        alt: "",
         id: 2
       }
     ]
@@ -268,7 +281,9 @@ export default function About() {
       <div className="about-column">
         <div className="about-box">
           <p className="about-text">
-            I am a software engineer and designer from Chattanooga, TN. I have been working on websites, software and graphic design over the past 3 years. Since then I have learned many new technologies, languages and techniques to further the craft. I had a lot of fun making this site and the projects presented, so I hope you enjoy!
+            I am a software engineer and designer from Chattanooga, TN. I have been working on software and website design and development, and graphic design over the past few years. 
+            Along the way I have always loved learning and discovering new techniques and technologies to further the craft. This site is a culmination of a lot of these skills I have acquired.
+            I prototyped and built the design of the site in Adobe XD, built the graphics and background in Illustrator and coded the site using React. I had a lot of fun testing my abilities and creativity making this site, and I hope you enjoy checking it out! 
           </p>
         </div>
       </div>
@@ -285,10 +300,10 @@ export default function About() {
                 return (
                   <div className="project" key="1">
                     {/* Gives img tag values related to the project, or item, being mapped over */}
-                    <img src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif" id={item.id}></img>
+                    <img tabindex="0" src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif" id={item.id} alt={item.alt}></img>
                     <div className={item.hide} name={item.id} id="folder-box">
                       <div className="inner-folder-left">
-                        <img className="thumbnail" src={item.thumb}></img>
+                        <img className="thumbnail" src={item.thumb} alt={item.subAlt}></img>
                       </div>
                       <div className="inner-folder">
                         <h3 className="folder-header">{item.name}</h3>
@@ -337,10 +352,10 @@ export default function About() {
                 return (
                   <div className="project" key="2">
                     {/* Gives img tag values related to the project, or item, being mapped over */}
-                    <img src={item.src} className={`projectImg`} name={item.name} onClick={onClick2} gif="Gif" id={item.id}></img>
+                      <img tabindex="0" src={item.src} className={`projectImg`} name={item.name} onClick={onClick2} gif="Gif" id={item.id} alt={item.alt}></img>
                     <div className={item.hide} name={item.id} id="folder-box">
                       <div className="inner-folder-left">
-                        <img className="thumbnail" src={item.thumb}></img>
+                        <img className="thumbnail" src={item.thumb} alt={item.subAlt}></img>
                       </div>
                       <div className="inner-folder">
                         <h2 className="folder-header">{item.name}</h2>
