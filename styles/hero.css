@@ -193,7 +193,7 @@
     }
 
     .hero-left-mobile {
-        height: 70%;
+        height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -234,7 +234,7 @@
         align-items: space-between;
         height: 100%;
         width: 45vw;
-        margin: 20px 0px 0px 0px;
+        margin: 10px 0px 0px 0px;
     }
 
     #iconDivMobile {
@@ -247,7 +247,7 @@
         /* position: initial; */
         top: 0%;
         left: auto;
-        padding: 12px 0px 15px 30px;
+        padding: 15px 0px 15px 30px;
 
 
     }
@@ -271,8 +271,8 @@
         /* position: absolute; */
         top: 30%;
         left: -10%;
-        padding: 10px 0px 10px 30px;
-        margin: 0px 0px 0px 0px;
+        padding: 6px 0px 6px 30px;
+        margin: 6px 0px 0px 0px;
         z-index: 0;
 
 
