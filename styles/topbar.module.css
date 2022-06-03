@@ -30,7 +30,7 @@
     z-index: 1;
 }
 
-.topbarright1, .topbarright2, .contactdiv {
+.topbarright1, .topbarright2, .contactdiv, .imageLink {
     display: flex;
     align-items: center;
     z-index: 1;
@@ -54,8 +54,9 @@
     padding-right: 10px;
 }
 
-.topimg2
+.imageLink
 {
+
 }
 
 .seperatordiv {
