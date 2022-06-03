@@ -118,6 +118,120 @@ export default function About() {
       }
     ]
   )
+  const [designProjects, setDesignProjects] = useState(
+    [
+      {
+        src: "Kuro Coffee logo.png",
+        name: "Kuro Coffee Logo",
+        gif: "Img",
+        thumb: "heavyweatherthumb.png",
+        text: "Designs I did for the site Kuro Coffee Brewers that I made.",
+        github: "https://github.com/JackSkiles/weatherJams",
+        link: "https://heavy-weather.herokuapp.com/",
+        hide: "folder-content-hide",
+        id: 0
+      },
+      // {
+      //   src: "BThree.png",
+      //   name: "BThree",
+      //   gif: "Img",
+      //   thumb: "heavyweatherthumb.png",
+      //   text: "Create account and use emergency button to send text to contacts",
+      //   github: "https://github.com/JackSkiles/BThree",
+      //   link: "https://bthree.herokuapp.com/",
+      //   hide: "folder-content-hide",
+      //   id: 1
+      // },
+      {
+        src: "kana keyboard.png",
+        name: "kana keyboard",
+        gif: "Img",
+        thumb: "kanathumb.png",
+        text: "Type text to be converted to Japanese Kana symbols.",
+        github: "https://github.com/JackSkiles/japaneseKeyboard",
+        link: "https://relaxed-booth-1bc501.netlify.app/",
+        hide: "folder-content-hide",
+        id: 1
+      },
+      {
+        src: "Tic-Tac-Toe.png",
+        name: "Tic-Tac-Toe",
+        gif: "Img",
+        thumb: "tictactoethumb.png",
+        text: "Play a game of tic-tac-toe against an AI.",
+        github: "https://github.com/JackSkiles/ticTacToe",
+        link: "https://github.com/JackSkiles/ticTacToe",
+        hide: "folder-content-hide",
+        id: 2
+      },
+      {
+        src: "Scene-it.png",
+        name: "Scene-it",
+        gif: "Img",
+        thumb: "sceneitthumb.png",
+        text: "Search movies from an api and add them to your favorites.",
+        github: "https://github.com/JackSkiles/scene-it-starter",
+        link: "https://affectionate-lumiere-0972d7.netlify.app/",
+        hide: "folder-content-hide",
+        id: 3
+      },
+      {
+        src: "Kuro Coffee.png",
+        name: "Kuro Coffee",
+        gif: "Img",
+        thumb: "kurothumb.png",
+        text: "Website I created for my coffee brewing startup.",
+        github: "https://github.com/JackSkiles/kuro",
+        link: "https://kurocoffeebrewers.com/",
+        hide: "folder-content-hide",
+        id: 4
+      },
+      {
+        src: "Pong.png",
+        name: "Pong",
+        gif: "Img",
+        thumb: "pongthumb.png",
+        text: "Simple pong game made in Python.",
+        github: "https://github.com/JackSkiles/pong",
+        link: "https://youtu.be/XUNmnWlVeR4",
+        hide: "folder-content-hide",
+        id: 5
+      },
+      {
+        src: "Building Escape.png",
+        name: "Building Escape",
+        gif: "Img",
+        thumb: "buildingthumb.png",
+        text: "Simple puzzle game made using Unreal Engine and C++.",
+        github: "https://github.com/JackSkiles/buildingEscape",
+        link: "https://www.youtube.com/watch?v=MEEnwg4MEWU",
+        hide: "folder-content-hide",
+        id: 6
+      },
+      {
+        src: "Snowboard.png",
+        name: "Snowboard",
+        gif: "Img",
+        thumb: "snowboardthumb.png",
+        text: "Physics based snowboard game built with Unity and C#",
+        github: "https://github.com/JackSkiles/snowboarder",
+        link: "https://youtu.be/mbXih7ta9U0",
+        hide: "folder-content-hide",
+        id: 7
+      },
+      {
+        src: "Delivery Driver.png",
+        name: "Delivery Driver",
+        gif: "Img",
+        thumb: "deliverythumb.png",
+        text: "Pick up and deliver packages in this game built with Unity and C#",
+        github: "https://github.com/JackSkiles/DeliveryDriver",
+        link: "https://youtu.be/5ydWsND0wZ8",
+        hide: "folder-content-hide",
+        id: 8
+      }
+    ]
+  )
   // const [open, setOpen] = useState("");
   const [open, setOpen] = useState("folder-content");
 
@@ -157,6 +271,55 @@ export default function About() {
       // Changes hide value to hidden in project, to hide folder contents when closed.
       newArray[e.target.id] = { ...newArray[e.target.id], hide: "folder-content-hide" }
       setProjects(newArray);
+
+      console.log(name)
+      // creates newName variable that takes just the name of target project, without the text open, to reset it to closed.
+      const newName = name.slice(0, length - 4);
+      console.log(newName);
+      console.log("hello");
+      e.target.src = `${newName}.png`;
+      e.target.name = `${newName}`;
+      // e.target.name = "";
+      // setOpen("HeavyWeather.png");
+      e.target.className = "projectImg"
+      setOpen(`folder-content-hide${e.target.id}`);
+    }
+  }
+  const onClick2 = (e) => {
+    e.preventDefault();
+
+    // console.log(e.target.src.length);
+    // creates new name variable to use in function, based on target project's name value
+    const name = e.target.name;
+    // creates int for name length to use in if logic
+    const length = name.length;
+    // console.log(src.slice(length - 4, length));
+    // if src variable at index point length - 4 to length = open, run function.
+
+    if (name.slice(length - 4, length) != "open") {
+      let newArray = [...designProjects]
+      newArray[e.target.id] = { ...newArray[e.target.id], hide: "folder-content" }
+      console.log("hello");
+      // Sets target projects source value to Gif to allow animation to run. Timer is set to length of Gif to set source back to image.
+      e.target.src = "FolderGif7.gif";
+      setTimeout(function () {
+        e.target.src = `heavy weatheropen.png`;
+        e.target.name = `${name}open`;
+        console.log(name)
+        setDesignProjects(newArray);
+        // e.target.name = "open";
+        // setOpen("folder14.png");
+      }, 450);
+      // sets className to change img sizing when folder is open
+      e.target.className = "projectGif"
+    }
+    // acts the same as previous if statement, only in reverse
+    else if (name.slice(length - 4, length) == "open") {
+      // gets the index of current element.
+      let newArray = [...designProjects]
+      // Changes hide value to hidden in project, to hide folder contents when closed.
+      newArray[e.target.id] = { ...newArray[e.target.id], hide: "folder-content-hide" }
+      setDesignProjects(newArray);
 
       console.log(name)
       // creates newName variable that takes just the name of target project, without the text open, to reset it to closed.
@@ -236,16 +399,16 @@ export default function About() {
         <div className="ProjectsBox">
           <div className="projectHeaderBox">
             <div className='projectsIcon'></div>
-            <h3 className="projectHeader">Design Projects</h3>
+            <h3 className="projectHeader">Design and UI Projects</h3>
           </div>
           <div className="projectsMain">
           <div className="projectsRow">
               {/* maps through devProjects state to list out each project with data intact */}
-              {devProjects.map((item) => {
+              {designProjects.map((item) => {
                 return (
                   <div className="project" key="2">
                     {/* Gives img tag values related to the project, or item, being mapped over */}
-                    <img src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif" id={item.id}></img>
+                    <img src={item.src} className={`projectImg`} name={item.name} onClick={onClick2} gif="Gif" id={item.id}></img>
                     <div className={item.hide} name={item.id} id="folder-box">
                       <div className="inner-folder-left">
                         <img className="thumbnail" src={item.thumb}></img>
