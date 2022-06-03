@@ -15,8 +15,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/weatherJams",
         link: "https://heavy-weather.herokuapp.com/",
         hide: "folder-content-hide",
-        subAlt: "",
-        alt: "",
+        alt: "Heavy Weather project folder",
+        subAlt: "Heavy Weather thumbnail, stormy weather with spotify.",
         id: 0
       },
       {
@@ -28,8 +28,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/japaneseKeyboard",
         link: "https://relaxed-booth-1bc501.netlify.app/",
         hide: "folder-content-hide",
-        subAlt: "",
-        alt: "",
+        alt: "Kana Keyboard project folder",
+        subAlt: "Kana Keyboard thumbnail, Japanese Hiragana",
         id: 1
       },
       {
@@ -41,8 +41,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/ticTacToe",
         link: "https://github.com/JackSkiles/ticTacToe",
         hide: "folder-content-hide",
-        subAlt: "",
-        alt: "",
+        subAlt: "Tic Tac Toe project folder",
+        alt: "Tic Tac Toe thumbnail, tic tac toe game board",
         id: 2
       },
       {
@@ -54,8 +54,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/scene-it-starter",
         link: "https://affectionate-lumiere-0972d7.netlify.app/",
         hide: "folder-content-hide",
-        subAlt: "",
-        alt: "",
+        subAlt: "scene it project folder",
+        alt: "scene it thumbnail",
         id: 3
       },
       {
@@ -67,8 +67,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/kuro",
         link: "https://kurocoffeebrewers.com/",
         hide: "folder-content-hide",
-        subAlt: "",
-        alt: "",
+        subAlt: "Kuro Coffee project folder",
+        alt: "Kuro Coffee thumbnail, coffee drippers.",
         id: 4
       },
       {
@@ -80,8 +80,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/pong",
         link: "https://youtu.be/XUNmnWlVeR4",
         hide: "folder-content-hide",
-        subAlt: "",
-        alt: "",
+        subAlt: "Pong project folder",
+        alt: "Pong thumbnail, pong game in progress",
         id: 5
       },
       {
@@ -93,8 +93,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/buildingEscape",
         link: "https://www.youtube.com/watch?v=MEEnwg4MEWU",
         hide: "folder-content-hide",
-        subAlt: "",
-        alt: "",
+        subAlt: "Building Escape project folder",
+        alt: "Building Escape thumbnail, unreal engine game.",
         id: 6
       },
       {
@@ -106,8 +106,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/snowboarder",
         link: "https://youtu.be/mbXih7ta9U0",
         hide: "folder-content-hide",
-        alt: "",
-        subAlt: "",
+        alt: "Snowboarding project folder",
+        subAlt: "Snowboard game thumbnail, unity game.",
         id: 7
       },
       {
@@ -358,7 +358,7 @@ export default function About() {
                         <img className="thumbnail" src={item.thumb} alt={item.subAlt}></img>
                       </div>
                       <div className="inner-folder">
-                        <h2 className="folder-header">{item.name}</h2>
+                        <h3 className="folder-header">{item.name}</h3>
                         <p className="folder-text">{item.text}</p>
                         <div className="text-box">
                           <a href={item.link} className="folder-link" target="blank" >{item.link1}</a>
