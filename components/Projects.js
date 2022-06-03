@@ -119,8 +119,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/DeliveryDriver",
         link: "https://youtu.be/5ydWsND0wZ8",
         hide: "folder-content-hide",
-        subAlt: "",
-        alt: "",
+        subAlt: "Delivery Driver project folder",
+        alt: "Delivery Driver thumbnail, unity game.",
         id: 8
       }
     ]
@@ -138,8 +138,8 @@ export default function About() {
         hide: "folder-content-hide",
         link1: "Behance",
         link2: "Website",
-        subAlt: "",
-        alt: "",
+        subAlt: "Kuro Designs project folder",
+        alt: "Kuro Designs thumbnail, coffee drippers.",
         id: 0
       },
       {
@@ -153,8 +153,8 @@ export default function About() {
         hide: "folder-content-hide",
         link1: "Behance",
         link2: "Website",
-        subAlt: "",
-        alt: "",
+        subAlt: "Poplar Springs Web project folder.",
+        alt: "Poplar Springs Website thumbnail.",
         id: 1
       },
       {
@@ -168,8 +168,8 @@ export default function About() {
         hide: "folder-content-hide",
         link1: "Adobe XD",
         link2: "Website",
-        subAlt: "",
-        alt: "",
+        subAlt: "Falcon Design project folder",
+        alt: "Falcon Design Website thumbnail.",
         id: 2
       }
     ]
