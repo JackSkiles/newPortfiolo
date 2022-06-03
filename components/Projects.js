@@ -121,47 +121,42 @@ export default function About() {
   const [designProjects, setDesignProjects] = useState(
     [
       {
-        src: "Kuro Coffee logo.png",
-        name: "Kuro Coffee Logo",
+        src: "Kuro Designs.png",
+        name: "Kuro Designs",
         gif: "Img",
-        thumb: "heavyweatherthumb.png",
-        text: "Designs I did for the site Kuro Coffee Brewers that I made.",
-        github: "https://github.com/JackSkiles/weatherJams",
-        link: "https://heavy-weather.herokuapp.com/",
+        thumb: "kurothumb.png",
+        text: "Designs I made for the site Kuro Coffee Brewers site.",
+        github: "https://kurocoffeebrewers.com/",
+        link: "https://www.behance.net/gallery/145179429/Kuro-Coffee-Brewers",
         hide: "folder-content-hide",
+        link1: "Behance",
+        link2: "Website",
         id: 0
       },
-      // {
-      //   src: "BThree.png",
-      //   name: "BThree",
-      //   gif: "Img",
-      //   thumb: "heavyweatherthumb.png",
-      //   text: "Create account and use emergency button to send text to contacts",
-      //   github: "https://github.com/JackSkiles/BThree",
-      //   link: "https://bthree.herokuapp.com/",
-      //   hide: "folder-content-hide",
-      //   id: 1
-      // },
       {
-        src: "kana keyboard.png",
-        name: "kana keyboard",
+        src: "poplar springs.png",
+        name: "Poplar Springs",
         gif: "Img",
-        thumb: "kanathumb.png",
-        text: "Type text to be converted to Japanese Kana symbols.",
-        github: "https://github.com/JackSkiles/japaneseKeyboard",
-        link: "https://relaxed-booth-1bc501.netlify.app/",
+        thumb: "poplarthumb.png",
+        text: "Logo and site I made for my web dev business, Poplar Springs Web.",
+        github: "https://poplarspringsweb.com/",
+        link: "https://www.behance.net/gallery/145220967/Poplar-Springs-Web-Development?/",
         hide: "folder-content-hide",
+        link1: "Behance",
+        link2: "Website",
         id: 1
       },
       {
-        src: "Tic-Tac-Toe.png",
-        name: "Tic-Tac-Toe",
+        src: "Falcon Design.png",
+        name: "Falcon Design",
         gif: "Img",
-        thumb: "tictactoethumb.png",
-        text: "Play a game of tic-tac-toe against an AI.",
-        github: "https://github.com/JackSkiles/ticTacToe",
-        link: "https://github.com/JackSkiles/ticTacToe",
+        thumb: "falconthumb.png",
+        text: "Website I made for Falcon Design Consultants.",
+        github: "https://falcondesignconsultants.com/",
+        link: "https://xd.adobe.com/view/e9205a43-1566-411d-81d2-5652521a62a1-bc73/?fullscreen",
         hide: "folder-content-hide",
+        link1: "Adobe XD",
+        link2: "Website",
         id: 2
       },
       {
@@ -173,6 +168,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/scene-it-starter",
         link: "https://affectionate-lumiere-0972d7.netlify.app/",
         hide: "folder-content-hide",
+        link1: "Behance",
+        link2: "Website",
         id: 3
       },
       {
@@ -184,6 +181,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/kuro",
         link: "https://kurocoffeebrewers.com/",
         hide: "folder-content-hide",
+        link1: "Behance",
+        link2: "Website",
         id: 4
       },
       {
@@ -195,6 +194,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/pong",
         link: "https://youtu.be/XUNmnWlVeR4",
         hide: "folder-content-hide",
+        link1: "Behance",
+        link2: "Website",
         id: 5
       },
       {
@@ -206,6 +207,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/buildingEscape",
         link: "https://www.youtube.com/watch?v=MEEnwg4MEWU",
         hide: "folder-content-hide",
+        link1: "Behance",
+        link2: "Website",
         id: 6
       },
       {
@@ -217,6 +220,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/snowboarder",
         link: "https://youtu.be/mbXih7ta9U0",
         hide: "folder-content-hide",
+        link1: "Behance",
+        link2: "Website",
         id: 7
       },
       {
@@ -228,6 +233,8 @@ export default function About() {
         github: "https://github.com/JackSkiles/DeliveryDriver",
         link: "https://youtu.be/5ydWsND0wZ8",
         hide: "folder-content-hide",
+        link1: "Behance",
+        link2: "Website",
         id: 8
       }
     ]
@@ -417,8 +424,8 @@ export default function About() {
                         <h2 className="folder-header">{item.name}</h2>
                         <p className="folder-text">{item.text}</p>
                         <div className="text-box">
-                          <a href={item.link} className="folder-link" target="blank" >Demo</a>
-                          <a href={item.github} className="folder-link" target="blank">Github link</a>
+                          <a href={item.link} className="folder-link" target="blank" >{item.link1}</a>
+                          <a href={item.github} className="folder-link" target="blank">{item.link2}</a>
                         </div>
                       </div>
                     </div>
