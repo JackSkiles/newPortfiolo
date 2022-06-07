@@ -147,7 +147,7 @@ export default function About() {
         name: "Poplar Springs",
         gif: "Img",
         thumb: "poplarthumb.png",
-        text: "Logo and site I made for my web dev business, Poplar Springs Web.",
+        text: "Logo and site I made for my web dev business.",
         github: "https://poplarspringsweb.com/",
         link: "https://www.behance.net/gallery/145220967/Poplar-Springs-Web-Development?/",
         hide: "folder-content-hide",

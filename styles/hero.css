@@ -106,7 +106,8 @@
 .list-header1, .list-header2, .list-header3, .list-header1-front, .list-header2-front, .list-header3-front, .list-header1-bottom, .list-header2-bottom, .list-header3-bottom {
     text-align: baseline;
     font-size: 1.4vw;
-    margin-top: 1.7vw;
+    margin-top: 1.6vw;
+    margin-bottom: 1.6vw;
     letter-spacing: .2vw;
     white-space: nowrap;
     transition: 1s;
