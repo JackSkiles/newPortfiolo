@@ -69,7 +69,7 @@ export default function About() {
         hide: "folder-content-hide",
         subAlt: "Kuro Coffee project folder",
         alt: "Kuro Coffee thumbnail, coffee drippers.",
-        id: 4
+        id: 3
       },
       {
         src: "Pong.png",
@@ -82,7 +82,7 @@ export default function About() {
         hide: "folder-content-hide",
         subAlt: "Pong project folder",
         alt: "Pong thumbnail, pong game in progress",
-        id: 5
+        id: 4
       },
       {
         src: "Building Escape.png",
@@ -95,7 +95,7 @@ export default function About() {
         hide: "folder-content-hide",
         subAlt: "Building Escape project folder",
         alt: "Building Escape thumbnail, unreal engine game.",
-        id: 6
+        id: 5
       },
       {
         src: "Snowboard.png",
@@ -108,7 +108,7 @@ export default function About() {
         hide: "folder-content-hide",
         alt: "Snowboarding project folder",
         subAlt: "Snowboard game thumbnail, unity game.",
-        id: 7
+        id: 6
       },
       {
         src: "Delivery Driver.png",
@@ -121,7 +121,7 @@ export default function About() {
         hide: "folder-content-hide",
         subAlt: "Delivery Driver project folder",
         alt: "Delivery Driver thumbnail, unity game.",
-        id: 8
+        id: 7
       }
     ]
   )
