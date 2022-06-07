@@ -281,7 +281,7 @@ export default function About() {
       <div className="about-column">
         <div className="about-box">
           <p className="about-text" id="about">
-            I am a software engineer and designer from Chattanooga, TN. I have been working on software and website design and development, and graphic design over the past few years. 
+            I am a software engineer and designer from Chattanooga, TN. I have been working on software development, website design and graphic design over the past few years. 
             Along the way I have always loved learning and discovering new techniques and technologies to further the craft. This site is a culmination of a lot of these skills I have acquired.
             I prototyped and built the design of the site in Adobe XD, built the graphics and background in Illustrator and coded the site using React. I had a lot of fun testing my abilities and creativity making this site, and I hope you enjoy checking it out! 
           </p>
@@ -300,7 +300,7 @@ export default function About() {
                 return (
                   <div className="project" key="1">
                     {/* Gives img tag values related to the project, or item, being mapped over */}
-                    <img tabindex="0" src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif" id={item.id} alt={item.alt}></img>
+                    <img tabIndex="0" src={item.src} className={`projectImg`} name={item.name} onClick={onClick} gif="Gif" id={item.id} alt={item.alt}></img>
                     <div className={item.hide} name={item.id} id="folder-box">
                       <div className="inner-folder-left">
                         <img className="thumbnail" src={item.thumb} alt={item.subAlt}></img>
@@ -352,7 +352,7 @@ export default function About() {
                 return (
                   <div className="project" key="2">
                     {/* Gives img tag values related to the project, or item, being mapped over */}
-                      <img tabindex="0" src={item.src} className={`projectImg`} name={item.name} onClick={onClick2} gif="Gif" id={item.id} alt={item.alt}></img>
+                      <img tabIndex="0" src={item.src} className={`projectImg`} name={item.name} onClick={onClick2} gif="Gif" id={item.id} alt={item.alt}></img>
                     <div className={item.hide} name={item.id} id="folder-box">
                       <div className="inner-folder-left">
                         <img className="thumbnail" src={item.thumb} alt={item.subAlt}></img>
