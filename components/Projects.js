@@ -194,7 +194,7 @@ export default function About() {
       newArray[e.target.id] = { ...newArray[e.target.id], hide: "folder-content" }
       console.log("hello");
       // Sets target projects source value to Gif to allow animation to run. Timer is set to length of Gif to set source back to image.
-      e.target.src = "FolderGif7.gif";
+      e.target.src = "FolderGif8.gif";
       setTimeout(function () {
         e.target.src = `heavy weatheropen.png`;
         e.target.name = `${name}open`;
