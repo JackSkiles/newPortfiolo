@@ -45,19 +45,19 @@ export default function About() {
         alt: "Tic Tac Toe thumbnail, tic tac toe game board",
         id: 2
       },
-      {
-        src: "Scene-it.png",
-        name: "Scene-it",
-        gif: "Img",
-        thumb: "sceneitthumb.png",
-        text: "Search movies from an api and add them to your favorites.",
-        github: "https://github.com/JackSkiles/scene-it-starter",
-        link: "https://affectionate-lumiere-0972d7.netlify.app/",
-        hide: "folder-content-hide",
-        subAlt: "scene it project folder",
-        alt: "scene it thumbnail",
-        id: 3
-      },
+      // {
+      //   src: "Scene-it.png",
+      //   name: "Scene-it",
+      //   gif: "Img",
+      //   thumb: "sceneitthumb.png",
+      //   text: "Search movies from an api and add them to your favorites.",
+      //   github: "https://github.com/JackSkiles/scene-it-starter",
+      //   link: "https://affectionate-lumiere-0972d7.netlify.app/",
+      //   hide: "folder-content-hide",
+      //   subAlt: "scene it project folder",
+      //   alt: "scene it thumbnail",
+      //   id: 3
+      // },
       {
         src: "Kuro Coffee.png",
         name: "Kuro Coffee",

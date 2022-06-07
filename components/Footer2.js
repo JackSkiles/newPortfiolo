@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <div>
             <div>
-                <div className="footerMain">
+                <div className="footerMain" id="footerMain">
                     <div className="footerLeft">
                         <h2 className="footerHeader">
                             Contact

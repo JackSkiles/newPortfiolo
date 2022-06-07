@@ -40,7 +40,7 @@ export default function Header(props) {
                 </div>
                 <div className={styles.menuGroup}>
                     <img src="Rectangle 17.png" className={styles.squareIcon}></img>
-                    <a href="" className={styles.menuItem}>Contact Me</a>
+                    <a href="#footerMain" className={styles.menuItem}>Contact Me</a>
                 </div>
             </div>
             <div className={`mobileMenuButton${hide}`} >
@@ -54,19 +54,19 @@ export default function Header(props) {
                 <div className="outerHeaderRightMobile">
                     <div className={styles.menuGroup2} id="top-div">
                         <img src="Rectangle 17.png" className={styles.squareIcon}></img>
-                        <a href="" className={styles.menuItem}>Development Projects</a>
+                        <a href="#devProjects" className={styles.menuItem}>Development Projects</a>
                     </div>
                     <div className={styles.menuGroup2}>
                         <img src="Rectangle 17.png" className={styles.squareIcon}></img>
-                        <a href="" className={styles.menuItem}>Graphic Design Projects</a>
+                        <a href="#designProjects" className={styles.menuItem}>Design and UI Projects</a>
                     </div>
                     <div className={styles.menuGroup2}>
                         <img src="Rectangle 17.png" className={styles.squareIcon}></img>
-                        <a href="" className={styles.menuItem}>Other Projects</a>
+                        <a href="#about" className={styles.menuItem}>About Me</a>
                     </div>
                     <div className={styles.menuGroup2}>
                         <img src="Rectangle 17.png" className={styles.squareIcon}></img>
-                        <a href="" className={styles.menuItem}>About Me</a>
+                        <a href="#footerMain" className={styles.menuItem}>Contact Me</a>
                     </div>
                 </div>
             </div>
