@@ -19,6 +19,12 @@ const TopBar = () => {
                 </div>
                 <div className={styles.seperatordiv}></div>
                 <div className={styles.topbarright2}>
+                    <div className={styles.contactdiv2}>
+                        <img className={styles.topimg2mobile} src="mailmobile.png" />
+                    </div>
+                    <div className={styles.contactdiv2}>
+                        <img className={styles.topimg2mobile} src="phonemobile.png" />
+                    </div>
                     <div className={styles.contactdiv}>
                         <a className={styles.imageLink} href="https://www.linkedin.com/in/jack-skiles-46500a1a7/">
                             <img className={styles.topimg2} src="Icon awesome-linkedin.png" />
@@ -33,12 +39,6 @@ const TopBar = () => {
                         <a className={styles.imageLink} href="https://docs.google.com/document/d/1iN9LqwXxS2YNXsTTURRkrz8REoIDk7gU36ElgItafLA/edit?usp=sharing">
                             <img className={styles.topimg2} src="Icon ionic-md-paper.png" />
                         </a>
-                    </div>
-                    <div className={styles.contactdiv2}>
-                        <img className={styles.topimg2mobile} src="mailmobile.png" />
-                    </div>
-                    <div className={styles.contactdiv2}>
-                        <img className={styles.topimg2mobile} src="phonemobile.png" />
                     </div>
                 </div>
             </div>
