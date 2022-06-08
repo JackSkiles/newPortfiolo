@@ -176,6 +176,13 @@
         right: -45%;
         height: 1300px;
     }
+    .hero-img-div {
+        position: relative;
+        top: 20%;
+        left: 115%;
+        /* border-radius: 50%; */
+        /* z-index: 1; */
+    }
 }
 
 @media screen and (max-width: 1000px) {

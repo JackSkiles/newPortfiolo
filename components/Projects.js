@@ -76,7 +76,7 @@ export default function About() {
         name: "Kuro Coffee",
         gif: "Img",
         thumb: "kurothumb.png",
-        text: "Website I created for my coffee brewing startup.",
+        text: "Website created for a local startup",
         github: "https://github.com/JackSkiles/kuro",
         link: "https://kurocoffeebrewers.com/",
         hide: "folder-content-hide",
@@ -102,7 +102,7 @@ export default function About() {
         name: "Pong",
         gif: "Img",
         thumb: "pongthumb.png",
-        text: "Simple pong game made in Python.",
+        text: "Simple Pong game made in Python.",
         github: "https://github.com/JackSkiles/pong",
         link: "https://youtu.be/XUNmnWlVeR4",
         hide: "folder-content-hide",
@@ -115,7 +115,7 @@ export default function About() {
         name: "Building Escape",
         gif: "Img",
         thumb: "buildingthumb.png",
-        text: "Simple puzzle game made using Unreal Engine and C++.",
+        text: "Puzzle game made using Unreal Engine and C++.",
         github: "https://github.com/JackSkiles/buildingEscape",
         link: "https://www.youtube.com/watch?v=MEEnwg4MEWU",
         hide: "folder-content-hide",
@@ -158,7 +158,7 @@ export default function About() {
         name: "Kuro Designs",
         gif: "Img",
         thumb: "kurothumb.png",
-        text: "Designs I made for the site Kuro Coffee Brewers site.",
+        text: "Custom logo and website for Kuro Coffee Brewers",
         github: "https://kurocoffeebrewers.com/",
         link: "https://www.behance.net/gallery/145179429/Kuro-Coffee-Brewers",
         hide: "folder-content-hide",
@@ -173,7 +173,7 @@ export default function About() {
         name: "Poplar Springs",
         gif: "Img",
         thumb: "poplarthumb.png",
-        text: "Logo and site I made for my web dev business.",
+        text: "Custom logo and website for Poplar Springs Web Development",
         github: "https://poplarspringsweb.com/",
         link: "https://www.behance.net/gallery/145220967/Poplar-Springs-Web-Development?/",
         hide: "folder-content-hide",
@@ -188,7 +188,7 @@ export default function About() {
         name: "Falcon Design",
         gif: "Img",
         thumb: "falconthumb.png",
-        text: "Website I made for Falcon Design Consultants.",
+        text: "Custom logo and website for Falcon Design Consultants in Atlanta Ga",
         github: "https://falcondesignconsultants.com/",
         link: "https://xd.adobe.com/view/e9205a43-1566-411d-81d2-5652521a62a1-bc73/?fullscreen",
         hide: "folder-content-hide",
@@ -307,9 +307,12 @@ export default function About() {
       <div className="about-column">
         <div className="about-box">
           <p className="about-text" id="about">
-            I am a software engineer and designer from Chattanooga, TN. I have been working on software development, website design and graphic design over the past few years. 
-            Along the way I have always loved learning and discovering new techniques and technologies to further the craft. This site is a culmination of a lot of these skills I have acquired.
-            I prototyped and built the design of the site in Adobe XD, built the graphics and background in Illustrator and coded the site using React. I had a lot of fun testing my abilities and creativity making this site, and I hope you enjoy checking it out! 
+            I am a software engineer and designer from Chattanooga, TN.  
+            I am passionate about  software development, website design and graphic design, 
+            and am always excited to discover new techniques and technologies to further my craft.
+             This website is a culmination of many of the skills that I have acquired. 
+             I prototyped and built the design of the site in Adobe XD, built the graphics and background in Illustrator and coded the site using React. 
+             I hope you enjoy checking it out!  Please feel free to contact me for any additional information!
           </p>
         </div>
       </div>
@@ -372,13 +375,13 @@ export default function About() {
             <h3 className="projectHeader" id="designProjects">Design and UI Projects</h3>
           </div>
           <div className="projectsMain">
-          <div className="projectsRow">
+            <div className="projectsRow">
               {/* maps through devProjects state to list out each project with data intact */}
               {designProjects.map((item) => {
                 return (
                   <div className="project" key="2">
                     {/* Gives img tag values related to the project, or item, being mapped over */}
-                      <img tabIndex="0" src={item.src} className={`projectImg`} name={item.name} onClick={onClick2} gif="Gif" id={item.id} alt={item.alt}></img>
+                    <img tabIndex="0" src={item.src} className={`projectImg`} name={item.name} onClick={onClick2} gif="Gif" id={item.id} alt={item.alt}></img>
                     <div className={item.hide} name={item.id} id="folder-box">
                       <div className="inner-folder-left">
                         <img className="thumbnail" src={item.thumb} alt={item.subAlt}></img>
