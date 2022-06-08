@@ -36,7 +36,7 @@ const TopBar = () => {
                         </a>
                     </div>
                     <div className={styles.contactdiv}>
-                        <a className={styles.imageLink} href="https://docs.google.com/document/d/1iN9LqwXxS2YNXsTTURRkrz8REoIDk7gU36ElgItafLA/edit?usp=sharing">
+                        <a className={styles.imageLink} href="https://docs.google.com/document/d/1foKfAhaQ8PqrCeMK3i4ciAeESNHygoNQpQX1QcaKmCk/edit?usp=sharing">
                             <img className={styles.topimg2} src="Icon ionic-md-paper.png" />
                         </a>
                     </div>
