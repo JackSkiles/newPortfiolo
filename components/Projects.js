@@ -20,6 +20,45 @@ export default function About() {
         id: 0
       },
       {
+        src: "Code Kitchen.png",
+        name: "Code Kitchen",
+        gif: "Img",
+        thumb: "kitchenthumb.png",
+        text: "Review and like recipes in this Full Stack React Express app.",
+        github: "https://github.com/JackSkiles/code-kitchen",
+        link: "https://code-kitchen.herokuapp.com/",
+        hide: "folder-content-hide",
+        alt: "Code Kitchen project folder",
+        subAlt: "Code Kitchen Thumbnail.",
+        id: 1
+      },
+      {
+        src: "Bthree.png",
+        name: "BThree",
+        gif: "Img",
+        thumb: "Bthreethumb.png",
+        text: "Full Stack group React Project for sending emergency texts.",
+        github: "https://github.com/JackSkiles/BThree",
+        link: "https://bthree.herokuapp.com/",
+        hide: "folder-content-hide",
+        alt: "BThree project folder",
+        subAlt: "BThree Thumbnail.",
+        id: 2
+      },
+      {
+        src: "Scene-it-redux.png",
+        name: "Scene-it-redux",
+        gif: "Img",
+        thumb: "moviethumb.png",
+        text: "Search movies from an api and add them to your favorites using state and Redux.",
+        github: "https://github.com/JackSkiles/electric-boogaloo",
+        link: "https://master--golden-nasturtium-7d75fc.netlify.app/",
+        hide: "folder-content-hide",
+        subAlt: "scene it project folder",
+        alt: "scene it thumbnail",
+        id: 3
+      },
+      {
         src: "kana keyboard.png",
         name: "kana keyboard",
         gif: "Img",
@@ -30,7 +69,20 @@ export default function About() {
         hide: "folder-content-hide",
         alt: "Kana Keyboard project folder",
         subAlt: "Kana Keyboard thumbnail, Japanese Hiragana",
-        id: 1
+        id: 4
+      },
+      {
+        src: "Kuro Coffee.png",
+        name: "Kuro Coffee",
+        gif: "Img",
+        thumb: "kurothumb.png",
+        text: "Website I created for my coffee brewing startup.",
+        github: "https://github.com/JackSkiles/kuro",
+        link: "https://kurocoffeebrewers.com/",
+        hide: "folder-content-hide",
+        subAlt: "Kuro Coffee project folder",
+        alt: "Kuro Coffee thumbnail, coffee drippers.",
+        id: 5
       },
       {
         src: "Tic-Tac-Toe.png",
@@ -43,33 +95,7 @@ export default function About() {
         hide: "folder-content-hide",
         subAlt: "Tic Tac Toe project folder",
         alt: "Tic Tac Toe thumbnail, tic tac toe game board",
-        id: 2
-      },
-      // {
-      //   src: "Scene-it.png",
-      //   name: "Scene-it",
-      //   gif: "Img",
-      //   thumb: "sceneitthumb.png",
-      //   text: "Search movies from an api and add them to your favorites.",
-      //   github: "https://github.com/JackSkiles/scene-it-starter",
-      //   link: "https://affectionate-lumiere-0972d7.netlify.app/",
-      //   hide: "folder-content-hide",
-      //   subAlt: "scene it project folder",
-      //   alt: "scene it thumbnail",
-      //   id: 3
-      // },
-      {
-        src: "Kuro Coffee.png",
-        name: "Kuro Coffee",
-        gif: "Img",
-        thumb: "kurothumb.png",
-        text: "Website I created for my coffee brewing startup.",
-        github: "https://github.com/JackSkiles/kuro",
-        link: "https://kurocoffeebrewers.com/",
-        hide: "folder-content-hide",
-        subAlt: "Kuro Coffee project folder",
-        alt: "Kuro Coffee thumbnail, coffee drippers.",
-        id: 3
+        id: 6
       },
       {
         src: "Pong.png",
@@ -82,7 +108,7 @@ export default function About() {
         hide: "folder-content-hide",
         subAlt: "Pong project folder",
         alt: "Pong thumbnail, pong game in progress",
-        id: 4
+        id: 7
       },
       {
         src: "Building Escape.png",
@@ -95,7 +121,7 @@ export default function About() {
         hide: "folder-content-hide",
         subAlt: "Building Escape project folder",
         alt: "Building Escape thumbnail, unreal engine game.",
-        id: 5
+        id: 8
       },
       {
         src: "Snowboard.png",
@@ -108,7 +134,7 @@ export default function About() {
         hide: "folder-content-hide",
         alt: "Snowboarding project folder",
         subAlt: "Snowboard game thumbnail, unity game.",
-        id: 6
+        id: 9
       },
       {
         src: "Delivery Driver.png",
@@ -121,7 +147,7 @@ export default function About() {
         hide: "folder-content-hide",
         subAlt: "Delivery Driver project folder",
         alt: "Delivery Driver thumbnail, unity game.",
-        id: 7
+        id: 10
       }
     ]
   )
