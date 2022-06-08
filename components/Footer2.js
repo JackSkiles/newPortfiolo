@@ -10,7 +10,7 @@ export default function Footer() {
                             Contact
                         </h2>
                         <a href="tel:+14236195332" className="footerLink">(423) 619-5332</a>
-                        <a href="jackskiles71@gmail.com" className="footerLink">jackskiles71@gmail.com</a>
+                        <p className="footerLink">jackskiles71@gmail.com</p>
                     </div>
                     <div className="footerCenter">
 
