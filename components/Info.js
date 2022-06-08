@@ -27,12 +27,12 @@ export default function Info() {
                             {/* <p id="iconText">Sequelize</p> */}
                         </div>
                         <div className="icon2">
-                            <i className="devicon-postgresql-plain" title="PostgreSQL" id="skill"></i>
-                            {/* <p id="iconText">PostgreSQL</p> */}
-                        </div>
-                        <div className="icon2">
                             <i className="devicon-nodejs-plain" title="Nodejs" id="skill"></i>
                             {/* <p id="iconText">Node.js</p> */}
+                        </div>
+                        <div className="icon2">
+                            <i className="devicon-postgresql-plain" title="PostgreSQL" id="skill"></i>
+                            {/* <p id="iconText">PostgreSQL</p> */}
                         </div>
                     </div>
                     <div className="icon-container">
@@ -41,7 +41,7 @@ export default function Info() {
                             {/* <p id="iconText">Sequelize</p> */}
                         </div>
                         <div className="icon2">
-                            <i className="devicon-java-plain" title="Sequelize" id="skill"></i>
+                            <i className="devicon-java-plain" title="Java" id="skill"></i>
                             {/* <p id="iconText">Sequelize</p> */}
                         </div>
                         <div className="icon2">
@@ -49,7 +49,7 @@ export default function Info() {
                             {/* <p id="iconText">Git</p> */}
                         </div>
                         <div className="icon2">
-                            <i className="devicon-python-plain" title="Git" id="skill"></i>
+                            <i className="devicon-python-plain" title="Python" id="skill"></i>
                             {/* <p id="iconText">Git</p> */}
                         </div>
                         <div className="icon2">
