@@ -28,15 +28,15 @@ export default function Header(props) {
             <div className={styles.headerRight}>
                 <div className={styles.menuGroup}>
                     <img src="Rectangle 17.png" className={styles.squareIcon}></img>
+                    <a href="#about" className={styles.menuItem}>About Me</a>
+                </div>
+                <div className={styles.menuGroup}>
+                    <img src="Rectangle 17.png" className={styles.squareIcon}></img>
                     <a href="#devProjects" className={styles.menuItem}>Development Projects</a>
                 </div>
                 <div className={styles.menuGroup}>
                     <img src="Rectangle 17.png" className={styles.squareIcon}></img>
                     <a href="#designProjects" className={styles.menuItem}>Design and UI Projects</a>
-                </div>
-                <div className={styles.menuGroup}>
-                    <img src="Rectangle 17.png" className={styles.squareIcon}></img>
-                    <a href="#about" className={styles.menuItem}>About Me</a>
                 </div>
                 <div className={styles.menuGroup}>
                     <img src="Rectangle 17.png" className={styles.squareIcon}></img>
@@ -52,6 +52,10 @@ export default function Header(props) {
             </div>
             <div className={`headerRightMobile${hide}`}>
                 <div className="outerHeaderRightMobile">
+                    <div className={styles.menuGroup2}>
+                        <img src="Rectangle 17.png" className={styles.squareIcon}></img>
+                        <a href="#about" className={styles.menuItem}>About Me</a>
+                    </div>
                     <div className={styles.menuGroup2} id="top-div">
                         <img src="Rectangle 17.png" className={styles.squareIcon}></img>
                         <a href="#devProjects" className={styles.menuItem}>Development Projects</a>
@@ -59,10 +63,6 @@ export default function Header(props) {
                     <div className={styles.menuGroup2}>
                         <img src="Rectangle 17.png" className={styles.squareIcon}></img>
                         <a href="#designProjects" className={styles.menuItem}>Design and UI Projects</a>
-                    </div>
-                    <div className={styles.menuGroup2}>
-                        <img src="Rectangle 17.png" className={styles.squareIcon}></img>
-                        <a href="#about" className={styles.menuItem}>About Me</a>
                     </div>
                     <div className={styles.menuGroup2}>
                         <img src="Rectangle 17.png" className={styles.squareIcon}></img>
