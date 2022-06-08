@@ -81,13 +81,14 @@ export default function Hero() {
                             <div className={`icon-div${list3}`}></div>
                             <h2 className={`list-header${list3}`}>WEB DEVELOPER</h2>
                         </div>
-                    </div>
-                    <div className='hero-right'>
                         <div className='hero-img-div' onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave} >
                             <img src={portrait} className={classN} />
                             {/* <button>Hello</button> */}
                         </div>
+                    </div>
+                    <div className='hero-right'>
+                        
                     </div>
                 </div>
                 <div className='hero-inner-mobile' >
