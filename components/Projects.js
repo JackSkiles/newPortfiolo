@@ -50,7 +50,7 @@ export default function About() {
         name: "Scene-it-redux",
         gif: "Img",
         thumb: "moviethumb.png",
-        text: "Search movies from an api and add them to your favorites using state and Redux.",
+        text: "Search movies from an api and add them to your list using State and Redux.",
         github: "https://github.com/JackSkiles/electric-boogaloo",
         link: "https://master--golden-nasturtium-7d75fc.netlify.app/",
         hide: "folder-content-hide",
