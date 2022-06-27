@@ -200,6 +200,8 @@ export default function About() {
       }
     ]
   )
+  const [searchDevProjects, setSearchDev] = useState();
+  const [searchDesignProjects, setSearchDesign] = useState();
   // const [open, setOpen] = useState("");
   const [open, setOpen] = useState("folder-content");
 
@@ -302,17 +304,21 @@ export default function About() {
       setOpen(`folder-content-hide${e.target.id}`);
     }
   }
+  const formSearch = (e) => {
+
+  }
+
   return (
     <div className="projects-main" style={{ backgroundImage: "url(/background.png)" }}>
       <div className="about-column">
         <div className="about-box">
           <p className="about-text" id="about">
-            I am a software engineer and designer from Chattanooga, TN.  
-            I am passionate about  software development, website design and graphic design, 
+            I am a software engineer and designer from Chattanooga, TN.
+            I am passionate about  software development, website design and graphic design,
             and am always excited to discover new techniques and technologies to further my craft.
-             This website is a culmination of many of the skills that I have acquired. 
-             I prototyped and built the design of the site in Adobe XD, built the graphics and background in Illustrator and coded the site using React. 
-             I hope you enjoy checking it out!  Please feel free to contact me for any additional information!
+            This website is a culmination of many of the skills that I have acquired.
+            I prototyped and built the design of the site in Adobe XD, built the graphics and background in Illustrator and coded the site using React.
+            I hope you enjoy checking it out!  Please feel free to contact me for any additional information!
           </p>
         </div>
       </div>
@@ -323,6 +329,10 @@ export default function About() {
             <h3 className="projectHeader" id="devProjects">Development Projects</h3>
           </div>
           <div className="projectsMain">
+            <form onSubmit={formSearch} class="search-div">
+              <input class="search-Bar" defaultValue={"Project search using Regular Expressions"}></input>
+              <button>Search</button>
+            </form>
             <div className="projectsRow">
               {/* maps through devProjects state to list out each project with data intact */}
               {devProjects.map((item) => {
