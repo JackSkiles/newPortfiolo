@@ -96,7 +96,7 @@
     width: 80%;
 }
 
-.projectsRow {
+.devProjectsRow, .designProjectsRow {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
