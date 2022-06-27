@@ -84,13 +84,29 @@
     padding: 0px 0px 30px 0px;
 }
 
-.projectsRow {
+.search-div
+{
+    width: 400px;
+    height: 20px;
+    padding: 20px 0px 0px 0px;
+}
+
+.search-Bar
+{
+    width: 80%;
+}
+
+.devProjectsRow, .designProjectsRow {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     max-width: 70vw;
+}
 
+.hidden
+{
+    display: none;
 }
 
 .project {

@@ -200,6 +200,11 @@ export default function About() {
       }
     ]
   )
+  const [searchDevProjects, setSearchDev] = useState();
+  const [searchDesignProjects, setSearchDesign] = useState();
+  const [searchText, setText] = useState('');
+  const [devClass, setDevClass] = useState('devProjectsRow')
+  const [designClass, setDesignClass] = useState('designProjectsRow')
   // const [open, setOpen] = useState("");
   const [open, setOpen] = useState("folder-content");
 
@@ -253,6 +258,7 @@ export default function About() {
       setOpen(`folder-content-hide${e.target.id}`);
     }
   }
+
   const onClick2 = (e) => {
     e.preventDefault();
 
@@ -277,7 +283,7 @@ export default function About() {
         setDesignProjects(newArray);
         // e.target.name = "open";
         // setOpen("folder14.png");
-      }, 450);
+      }, 320);
       // sets className to change img sizing when folder is open
       e.target.className = "projectGif"
     }
@@ -302,17 +308,51 @@ export default function About() {
       setOpen(`folder-content-hide${e.target.id}`);
     }
   }
+
+  // const formSearch = (e) => {
+  //   e.preventDefault();
+  //   const newSearchArray = [];
+  //   const testText = RegExp(searchText, "i");
+  //   devProjects.map(project => {
+  //     console.log(project.name)
+  //     if (testText.exec(project.name) !== null) {
+  //       newSearchArray.push(project)
+  //       console.log("Match")
+  //     }
+  //     else {
+  //       console.log("No matches");
+  //     }
+  //   })
+  //   if (e.target.name == "dev") {
+  //     setSearchDev(newSearchArray);
+  //   }
+  //   console.log(searchDevProjects);
+  //   useEffect(e.target.name);
+  // }
+
+  // const handleChange = (e) => {
+  //   const { value, name } = e.target;
+  //   setText(value);
+  // }
+
+  // const useEffect = (value) => {
+  //   if (value == "dev") {
+  //     setDevClass("hidden")
+  //   }
+  //   console.log("hello")
+  // }
+
   return (
     <div className="projects-main" style={{ backgroundImage: "url(/background.png)" }}>
       <div className="about-column">
         <div className="about-box">
           <p className="about-text" id="about">
-            I am a software engineer and designer from Chattanooga, TN.  
-            I am passionate about  software development, website design and graphic design, 
+            I am a software engineer and designer from Chattanooga, TN.
+            I am passionate about  software development, website design and graphic design,
             and am always excited to discover new techniques and technologies to further my craft.
-             This website is a culmination of many of the skills that I have acquired. 
-             I prototyped and built the design of the site in Adobe XD, built the graphics and background in Illustrator and coded the site using React. 
-             I hope you enjoy checking it out!  Please feel free to contact me for any additional information!
+            This website is a culmination of many of the skills that I have acquired.
+            I prototyped and built the design of the site in Adobe XD, built the graphics and background in Illustrator and coded the site using React.
+            I hope you enjoy checking it out!  Please feel free to contact me for any additional information!
           </p>
         </div>
       </div>
@@ -323,7 +363,11 @@ export default function About() {
             <h3 className="projectHeader" id="devProjects">Development Projects</h3>
           </div>
           <div className="projectsMain">
-            <div className="projectsRow">
+            {/* <form onSubmit={formSearch} class="search-div" name="dev">
+              <input class="search-Bar" defaultValue={"Project search using Regular Expressions"} value={searchText} onChange={handleChange}></input>
+              <button type="Submit">Search</button>
+            </form> */}
+            <div className={devClass}>
               {/* maps through devProjects state to list out each project with data intact */}
               {devProjects.map((item) => {
                 return (
@@ -375,7 +419,7 @@ export default function About() {
             <h3 className="projectHeader" id="designProjects">Design and UI Projects</h3>
           </div>
           <div className="projectsMain">
-            <div className="projectsRow">
+            <div className={designClass}>
               {/* maps through devProjects state to list out each project with data intact */}
               {designProjects.map((item) => {
                 return (
