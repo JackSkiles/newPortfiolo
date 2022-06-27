@@ -202,8 +202,9 @@ export default function About() {
   )
   const [searchDevProjects, setSearchDev] = useState();
   const [searchDesignProjects, setSearchDesign] = useState();
-
   const [searchText, setText] = useState('');
+  const [devClass, setDevClass] = useState('devProjectsRow')
+  const [designClass, setDesignClass] = useState('designProjectsRow')
   // const [open, setOpen] = useState("");
   const [open, setOpen] = useState("folder-content");
 
@@ -308,36 +309,38 @@ export default function About() {
     }
   }
 
-  const formSearch = (e) => {
-    e.preventDefault();
-    const newSearchArray = [];
-    const testText = RegExp(searchText, "i");
-    devProjects.map(project => {
-      console.log(project.name)
-      if (testText.exec(project.name) !== null) {
-        newSearchArray.push(project)
-        console.log("Match")
-      }
-      else {
-        console.log("No matches");
-      }
-    })
-    if(e.target.name == "dev")
-    {
-      setSearchDev(newSearchArray);
-    }
-    console.log(searchDevProjects);
-    useEffect(e.target.name);
-  }
+  // const formSearch = (e) => {
+  //   e.preventDefault();
+  //   const newSearchArray = [];
+  //   const testText = RegExp(searchText, "i");
+  //   devProjects.map(project => {
+  //     console.log(project.name)
+  //     if (testText.exec(project.name) !== null) {
+  //       newSearchArray.push(project)
+  //       console.log("Match")
+  //     }
+  //     else {
+  //       console.log("No matches");
+  //     }
+  //   })
+  //   if (e.target.name == "dev") {
+  //     setSearchDev(newSearchArray);
+  //   }
+  //   console.log(searchDevProjects);
+  //   useEffect(e.target.name);
+  // }
 
-  const handleChange = (e) => {
-    const { value, name } = e.target;
-    setText(value);
-  }
+  // const handleChange = (e) => {
+  //   const { value, name } = e.target;
+  //   setText(value);
+  // }
 
-  const useEffect = () => {
-    console.log("hello")
-  }
+  // const useEffect = (value) => {
+  //   if (value == "dev") {
+  //     setDevClass("hidden")
+  //   }
+  //   console.log("hello")
+  // }
 
   return (
     <div className="projects-main" style={{ backgroundImage: "url(/background.png)" }}>
@@ -360,11 +363,11 @@ export default function About() {
             <h3 className="projectHeader" id="devProjects">Development Projects</h3>
           </div>
           <div className="projectsMain">
-            <form onSubmit={formSearch} class="search-div" name="dev">
+            {/* <form onSubmit={formSearch} class="search-div" name="dev">
               <input class="search-Bar" defaultValue={"Project search using Regular Expressions"} value={searchText} onChange={handleChange}></input>
               <button type="Submit">Search</button>
-            </form>
-            <div className="devProjectsRow">
+            </form> */}
+            <div className={devClass}>
               {/* maps through devProjects state to list out each project with data intact */}
               {devProjects.map((item) => {
                 return (
@@ -416,7 +419,7 @@ export default function About() {
             <h3 className="projectHeader" id="designProjects">Design and UI Projects</h3>
           </div>
           <div className="projectsMain">
-            <div className="designProjectsRow">
+            <div className={designClass}>
               {/* maps through devProjects state to list out each project with data intact */}
               {designProjects.map((item) => {
                 return (
