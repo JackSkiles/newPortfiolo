@@ -283,7 +283,7 @@ export default function About() {
         setDesignProjects(newArray);
         // e.target.name = "open";
         // setOpen("folder14.png");
-      }, 450);
+      }, 320);
       // sets className to change img sizing when folder is open
       e.target.className = "projectGif"
     }
