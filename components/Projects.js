@@ -202,6 +202,8 @@ export default function About() {
   )
   const [searchDevProjects, setSearchDev] = useState();
   const [searchDesignProjects, setSearchDesign] = useState();
+
+  const [searchText, setText] = useState('');
   // const [open, setOpen] = useState("");
   const [open, setOpen] = useState("folder-content");
 
@@ -255,6 +257,7 @@ export default function About() {
       setOpen(`folder-content-hide${e.target.id}`);
     }
   }
+
   const onClick2 = (e) => {
     e.preventDefault();
 
@@ -304,8 +307,16 @@ export default function About() {
       setOpen(`folder-content-hide${e.target.id}`);
     }
   }
-  const formSearch = (e) => {
 
+  const formSearch = (e) =>
+  {
+    e.preventDefault();
+    console.log(searchText)
+  }
+
+  const handleChange = (e) => {
+    const { value, name } = e.target;
+    setText(value);
   }
 
   return (
@@ -330,8 +341,8 @@ export default function About() {
           </div>
           <div className="projectsMain">
             <form onSubmit={formSearch} class="search-div">
-              <input class="search-Bar" defaultValue={"Project search using Regular Expressions"}></input>
-              <button>Search</button>
+              <input class="search-Bar" defaultValue={"Project search using Regular Expressions"} value={searchText} onChange={handleChange}></input>
+              <button type="Submit">Search</button>
             </form>
             <div className="projectsRow">
               {/* maps through devProjects state to list out each project with data intact */}
